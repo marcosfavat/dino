@@ -25,8 +25,6 @@ There are several option available :
 
 * *Subdivision* : Subdivision is needed because the displacer needs some vertices to work with. The script can subdivise the plane by adding a simple subsurf modifier or by cutting the plane according to the number of DEM pixel which overlay the mesh.
 
-* *Warp method* : there are two ways to get the displacement : by setting the strength value of the displacer or by setting the object dimension Z property. It's more meaningful for the user to play with obj dimension Z because strength values depends on raster bit depth and doesn't simply represent elevation change.
-
 * *Image depth* : you need to specify original DEM bit depth. This information is needed to retrieve pixel elevation values because Blender texture value is normalize from 0.0 to 1.0. You can easily find this  information with QGIS for example.
 
 * *Is scaled* : check this if the raster is scaled
