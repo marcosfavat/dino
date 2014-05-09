@@ -1,4 +1,4 @@
-The _As DEM_ mode can be used to import a raster that define a Digital Elevation Model where each pixel values of the image represents a true elevation. This type of raster, also called grid, is usually composed of one band that can be coded into different bit depth depending on the data accuracy:
+The *As DEM* mode can be used to import a raster that define a Digital Elevation Model where each pixel values of the image represents a true elevation. This type of raster, also called grid, is usually composed of one band that can be coded into different bit depth depending on the data accuracy:
 
 Bit depth             |   Range of values that each pixel can contain
 ----------------------|-----------------------------------
@@ -21,17 +21,25 @@ Before import a DEM you need a mesh to apply the displacer on. Standard workflow
 
 There are several option available :
 
-*_Objects_ : with this list you can select the mesh that will be used to config the displacer. Usually this is the reference map image previously imported on a plane.
+* *Objects* : with this list you can select the mesh that will be used to config the displacer. Usually this is the reference map image previously imported on a plane.
 
-*_Subdivision_ : Subdivision is needed because the displacer needs some vertices to work with. The script can subdivise the plane by adding a simple subsurf modifier or by cutting the plane according to the number of DEM pixel which overlay the mesh.
+* *Subdivision* : Subdivision is needed because the displacer needs some vertices to work with. The script can subdivise the plane by adding a simple subsurf modifier or by cutting the plane according to the number of DEM pixel which overlay the mesh.
 
-*_Warp method_ : there are two ways to get the displacement : by setting the strength value of the displacer or by setting the object dimension Z property. It's more meaningful for the user to play with obj dimension Z because strength values depends on raster bit depth and doesn't simply represent elevation change. 
+* *Warp method* : there are two ways to get the displacement : by setting the strength value of the displacer or by setting the object dimension Z property. It's more meaningful for the user to play with obj dimension Z because strength values depends on raster bit depth and doesn't simply represent elevation change.
 
-Bellow some technical notes about strength calculation:
-The strength value defines the vertex displacement
-->_Displacement = (Texture value - Midlevel) × Strength_<-
-Midlevel represents texture value which will be treated as no displacement by the modifier, for convenience it is always set to zero, so 
-->So _Strength = Displacement / Texture value_<-
-Where displacement is the target elevation change (altitude max - altitude min) and texture value is Blender color value which is normalize between 0.0 and 1.0. A Blender texture value of 1.0 equal to the maximum value that can be assigned in the dataset, so this value depends on raster bit depth
-->_texture value = delta Z / (2^depth -1)_<-
-Finally : _Strength = delta Z / (delta Z / (2^depth -1)) = **2^depth-1**_
+* *Image depth* : you need to specify original DEM bit depth. This information is needed to retrieve pixel elevation values because Blender texture value is normalize from 0.0 to 1.0. You can easily find this  information with QGIS for example.
+
+* *Is scaled* : check this if the raster is scaled
+
+* *Angular coords* : check this if the raster is in decimal degrees
+
+**Bellow some technical notes about strength calculation:**   
+The strength value defines the vertex displacement  
+`Displacement = (Texture value - Midlevel) × Strength`  
+Midlevel represents texture value which will be treated as no displacement by the modifier, for convenience it is always set to zero, so  
+`Strength = Displacement / Texture value`  
+Where displacement is the target elevation change (altitude max - altitude min) and texture value is Blender color value which is normalize between 0.0 and 1.0. A Blender texture value of 1.0 equal to the maximum value that can be assigned in the raster dataset, so this value depends on raster bit depth  
+`texture value = delta Z / (2^depth-1)`  
+Finally  
+`Strength = delta Z / (delta Z / (2^depth-1))`  
+**`Strength = 2^depth-1`**
