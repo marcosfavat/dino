@@ -19,7 +19,9 @@ For the moment, the script can only process 8 or 16 bit raster because it seems 
 
 Before import a DEM you need a mesh to apply the displacer on. Standard workflow is to import beforehand a texture map like topographic map or aerial photo on a plane. This plane will define the working area and will be used as reference for the DEM import.
 
-There are several option available :
+Then you can launch the DEM import tool. There are several option available :
+
+![](https://github.com/domlysz/BlenderGIS/raw/master/images/georaster_Mode_As_DEM.jpeg)
 
 * *Objects* : with this list you can select the mesh that will be used to config the displacer. Usually this is the reference map image previously imported on a plane.
 
@@ -31,6 +33,14 @@ There are several option available :
 
 * *Angular coords* : check this if the raster is in decimal degrees
 
+After the import you must see the mesh correctly warped
+
+![](https://github.com/domlysz/BlenderGIS/raw/master/images/georaster_DEM_result.jpeg)
+
+In the modifier stack you can check the displace setting
+
+![](https://github.com/domlysz/BlenderGIS/raw/master/images/georaster_Displacer_Settings.jpeg)
+
 **Bellow some technical notes about strength calculation:**   
 The strength value defines the vertex displacement  
 `Displacement = (Texture value - Midlevel) × Strength`  
@@ -41,3 +51,7 @@ Where displacement is the target elevation change (altitude max - altitude min) 
 Finally  
 `Strength = delta Z / (delta Z / (2^depth-1))`  
 **`Strength = 2^depth-1`**
+
+The script sets some important parameters of the displacer texture:
+
+![](https://github.com/domlysz/BlenderGIS/raw/master/images/georaster_Displacer_texture_Settings.jpeg)
