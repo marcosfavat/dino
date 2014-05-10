@@ -11,6 +11,17 @@ png                 |   pgw / pgwx / pngw
 
 If the raster world file has rotation parameter you can still correctly import it on a plane or on a mesh but not as background.
 
+**Import on a plane**
+
+![](https://github.com/domlysz/BlenderGIS/raw/master/images/georaster_Mode_On_plane.jpeg)
+
+**Import as background image**
+
+![](https://github.com/domlysz/BlenderGIS/raw/master/images/georaster_Mode_As_Background.jpeg)
+
+**Import on a mesh**
+
+![](https://github.com/domlysz/BlenderGIS/raw/master/images/georaster_Mode_On_Mesh.jpeg)
 
 **Troubles**
 
