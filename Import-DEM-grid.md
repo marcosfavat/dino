@@ -45,6 +45,8 @@ In the modifier stack you can check the displace setting
 
 The DEM is used as texture for the displacer and to place this texture the mesh as now a new UV map calculates according to the DEM overlay position.
 
+![](https://github.com/domlysz/BlenderGIS/raw/master/images/georaster_Mesh_UVmap.jpeg)
+
 **Strength calculation:**   
 The strength value defines the vertex displacement  
 `Displacement = (Texture value - Midlevel) × Strength`  
