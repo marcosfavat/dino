@@ -1,1 +1,1 @@
-todo
+[GDAL](http://gdal.org/) is a popular and powerful geospatial data processing library.
