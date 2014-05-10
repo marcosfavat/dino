@@ -3,3 +3,6 @@ Because Blender (and most of 3d software) cannot strongly handle objects that ar
 ![](https://github.com/domlysz/BlenderGIS/raw/master/images/custom_props.jpeg)
 
 When you try to import a shapefile or a georaster, if the scene already contains these custom properties, you will have the opportunity to use them to adjust the position of the new imported object.
+
+![](https://github.com/domlysz/BlenderGIS/raw/master/images/custom_props_considere.jpeg)
+
