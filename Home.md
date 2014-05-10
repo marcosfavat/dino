@@ -15,3 +15,5 @@ Don’t forget to unable the addons in Blender user’s preferences
 *Delaunay/voronoi* and *georef cam* tools are available in the 3d view tool sheft, in a dedicaced tab named *GIS*.
 
 ![](https://github.com/domlysz/BlenderGIS/raw/master/images/tools_tab_gis.jpeg)
+
+The script rely on Numpy which is ship with Blender since version 2.70. It also optionally rely on [GDAL](https://github.com/domlysz/BlenderGIS/wiki/Install-GDAL) for advanced features.
