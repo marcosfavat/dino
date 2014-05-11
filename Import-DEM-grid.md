@@ -31,13 +31,13 @@ There are several option available :
 
 * *Image depth* : you need to specify original DEM bit depth. This information is needed to retrieve pixel elevation values because Blender texture value is normalized from 0.0 to 1.0. You can easily find this  information with QGIS for example.
 
-* *Is scaled* : check this if the raster is [scaled](https://github.com/domlysz/BlenderGIS/wiki/3.4-Scale-DEM-dataset)
+* *Is scaled* : check this if the raster is [scaled](https://github.com/domlysz/BlenderGIS/wiki/Scale-DEM-dataset)
 
     Using scaled DEM requires the user to specify what are original maximum and minimum elevation of the raster dataset because this information is no longer available one the values have been re-distributed.
 
     ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/georaster_Mode_As_DEM_Is_Scaled.jpeg)
 
-* *Angular coords* : check this if the raster is in [decimal degrees](https://github.com/domlysz/BlenderGIS/wiki/1.3-Working-in-decimal-degrees)
+* *Angular coords* : check this if the raster is in [decimal degrees](https://github.com/domlysz/BlenderGIS/wiki/Working-in-decimal-degrees)
 
 After the import you must see the mesh correctly warped
 
