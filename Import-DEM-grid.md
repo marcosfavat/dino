@@ -33,7 +33,7 @@ There are several option available :
 
 * *Is scaled* : check this if the raster is [scaled](https://github.com/domlysz/BlenderGIS/wiki/Scale-DEM-dataset)
 
-    Using scaled DEM requires the user to specify what are original maximum and minimum elevation of the raster dataset because this information is no longer available one the values have been re-distributed.
+    Using scaled DEM requires the user to specify what are original maximum and minimum elevation of the raster dataset because this information is no longer available once the values have been re-distributed.
 
     ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/georaster_Mode_As_DEM_Is_Scaled.jpeg)
 
