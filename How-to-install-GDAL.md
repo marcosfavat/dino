@@ -1,8 +1,6 @@
 [GDAL](http://gdal.org/) is a popular and powerful geospatial data processing library.
 
-GDAL
-
-**Windows
+**Windows**
 
 Core binary file can be downloaded from [gisinternals.com](http://www.gisinternals.com/sdk/). Scroll down to *release versions* table and click on the relevant link in the *Downloads* column (32 or 64 bit). From the new page download the GDAL Core file (gdal-[version]-[build]-core.msi)
 
