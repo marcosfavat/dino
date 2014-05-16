@@ -16,12 +16,14 @@ Fortunately other Python packages can be found [here](http://www.lfd.uci.edu/~go
 
 Installing Python binding from these setup files requires that Python exists on your computer. So the first step is to install Python (download it [here](https://www.python.org/downloads/)). Choose the version that corresponds to the version delivered with Blender.
 
-GDAL Python binding installer creates a new folder named osgeo in **C:\Python33\Lib\site-packages**. Just copy osgeo folder in Python folder tree of Blender: **C:\Program Files\Blender Foundation\Blender\2.70\python\lib\site-packages**
+GDAL Python binding installer creates a new folder named osgeo in *C:\Python33\Lib\site-packages*. Just copy osgeo folder in Python folder tree of Blender: *C:\Program Files\Blender Foundation\Blender\2.70\python\lib\site-packages*
 
 Note that Numpy version uses to compile GDAL binding needs to match the version ship with Blender.
 
 To test the install open Blender Python console and type:
+
 `from osgeo import gdal`
+
 `from osgeo import gdalnumeric`
 
 These statements should not return error.
