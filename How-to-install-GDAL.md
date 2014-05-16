@@ -12,7 +12,7 @@ Actually installing binary files is good enought to get the addon working as wel
 
 Python binding is also available right here, but these versions aren't compiled accross Numpy. Without Numpy, the binding will not have all of its functionality and can not be used with the addon.
 
-Fortunately other Python packages can be found[here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal). This distribution also includes GDAL binary files. If you already installed binary files you can delete them from Python folder (just delete *.exe and *.dll).
+Fortunately other Python packages can be found [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal). This distribution also includes GDAL binary files. If you already installed binary files you can delete them from Python folder (just delete *.exe and *.dll).
 
 Installing Python binding from these setup files requires that Python exists on your computer. So the first step is to install Python (download it [here](https://www.python.org/downloads/)). Choose the version that corresponds to the version delivered with Blender.
 
