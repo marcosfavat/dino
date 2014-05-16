@@ -8,7 +8,7 @@ Using binary files needs to edit environmental variables like this:
 
 *todo: append screenshoot here*
 
-Actually installing binary files is good enought to get the addon working as well. But you can also use GDAL Python API but in this cas you need to install the binding.
+Actually installing binary files is good enought to get the addon working as well. You can also use GDAL Python API but in this cas you need to install the binding.
 
 Python binding is also available right here, but these versions aren't compiled accross Numpy. Without Numpy, the binding will not have all of its functionality and can not be used with the addon.
 
