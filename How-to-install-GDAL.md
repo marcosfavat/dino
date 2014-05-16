@@ -6,7 +6,7 @@ Core binary file can be downloaded from [gisinternals.com](http://www.gisinterna
 
 Using binary files needs to edit environmental variables like this:
 
-*todo: append screenshoot here*
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/varEnvGDAL.jpg)
 
 Actually installing binary files is good enought to get the addon working as well. You can also use GDAL Python API but in this cas you need to install the binding.
 
