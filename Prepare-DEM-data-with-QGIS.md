@@ -12,9 +12,9 @@ The best way to do it is the *save raster as* dialog.
 
 * First move and zoom the QGIS map view canvas to encompass the extent of interest.
 * Right click on layer and choose save raster as. In the dialog, click on map view extent button.
-* In create options add worldfile=yes, in this way QGIS creates the world file needed for blender import.
+* In create options add *worldfile=yes*, in this way QGIS creates the world file needed for blender import.
 
-Another way to clip a raster is the clipper tool under *Raster menu / Extraction / Clipper*. Think to add –co worldfile=yes option in the gdal command to get the worldfile.
+Another way to clip a raster is the clipper tool under *Raster menu / Extraction / Clipper*. Think to add *–co worldfile=yes* option in the gdal command to get the worldfile.
 
 **How to know the raster bit depth**
 
