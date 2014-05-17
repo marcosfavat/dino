@@ -22,10 +22,10 @@ Just check it in the raster metadata panel in layer properties.
 
 **How to decrease raster bit depth from 32 bits to 16 bits**
 
-for the moment, the addon cannot handle correctly 32 bits raster dataset, so you need to decrease the bit depth to 16 bits, but note that you will lose data accuracy. To do it use *gdal_ranslate* tool available under raster menu.
+For the moment, the addon cannot handle correctly 32 bits raster dataset, so you need to decrease the bit depth to 16 bits, but note that you will lose data accuracy. To do it use *gdal_ranslate* tool available under raster menu.
 
 You need to edit the command to add some options:
-*-co worldfile=yes* -> creates a worldfile, which will be useful for the import into blender
-*-ot UInt16* -> indicates the data type (UInt16 = unsigned 16 bits, Int16 = signed 16 bits, Byte = 8 bits)
+* *-co worldfile=yes* -> creates a worldfile, which will be useful for the import into blender
+* *-ot UInt16* -> indicates the data type (UInt16 = unsigned 16 bits, Int16 = signed 16 bits, Byte = 8 bits)
 
 You can also add *-scale* option if you want to rescale the pixels values according to the bit depth range capacity. For example if elevation values are from 0 to 350 and your data is in 16 bits (max value = 65535) then just type ***-scale 0 350 0 65535*** (values from 0 to 350 will be stretch from 0 to 65535).
