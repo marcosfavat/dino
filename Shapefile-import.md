@@ -21,3 +21,5 @@ Note that the extrusion can be very slow with lot of features but you can see pr
 * For polygons import, if you see faces which seem to be strangely filled try to remove duplicate vertex on the mesh (modify tolerance distance if necessary)
 
 * The script can handle multipart geometry but actually if the part defines a polygon hole, a face will still be created.
+
+* Because the scene can be very large, don’t forget to configure camera clipping distance according to the scene. If you still see black faces error after setting clip end distance try to set the clip start distance closer to the scene, it will help Blender to improve vertex position according to the Z depth of the camera.
