@@ -1,3 +1,5 @@
+If the scene has georef custom properties then this will be considered.
+
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/shp_export_options.jpg)
 
 Suzane in QGIS !
