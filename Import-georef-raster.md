@@ -59,6 +59,12 @@ And finally apply a map texture
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/georaster_On_Mesh_result.jpeg)
 
 
+** Material node setup**
+
+The raster is applied on mesh as a material texture. This material is setting via shader nodes for both Blender Internal and Cycles engine.
+
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/georaster_material_node_setup.jpg)
+
 **Troubles**
 
 * If you don't see any texture on the mesh, try to config 3d view display and shading properties:
