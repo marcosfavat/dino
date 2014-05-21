@@ -59,7 +59,7 @@ And finally apply a map texture
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/georaster_On_Mesh_result.jpeg)
 
 
-** Material node setup**
+**Material node setup**
 
 The raster is applied on mesh as a material texture. This material is setting via shader nodes for both Blender Internal and Cycles engine.
 
