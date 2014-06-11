@@ -1,6 +1,6 @@
-[GDAL](http://gdal.org/) is a popular and powerful geospatial data processing library. GDAL is available as a set of commandline utilities (ready to use binaries files). The developer oriented library is available as a C/C++ API. Bindings in other languages, including Python, are aslo available.
+[GDAL](http://gdal.org/) is a popular and powerful geospatial data processing library. GDAL is available as a set of commandline utilities (ready to use binaries files). The developer oriented library is available as a C/C++ API. Bindings in other languages, including Python, are also available.
 
-Actually installing binary files is good enought to get the addon working as well. You can also use GDAL Python API but in this cas you need to install the binding.
+Actually installing binary files is good enought to get the addon working as well. You can also use GDAL Python API but in this case you need to install the binding.
 
 ### Windows
 
