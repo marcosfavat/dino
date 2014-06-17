@@ -47,7 +47,7 @@ In the modifier stack you can check the displace setting
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/georaster_Displacer_Settings.jpeg)
 
-**To increase the warp effect just edit the object scale Z property.**
+**_If you want to increase the warp effect just edit the scale Z property_**
 
 The DEM is used as texture for the displacer and to place this texture the mesh as now a new UV map calculates according to the DEM overlay position.
 
