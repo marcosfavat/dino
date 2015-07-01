@@ -7,7 +7,7 @@ Bit depth             |   Range of values that each pixel can contain
 4 bit                 |   0 to 16
 Unsigned 8 bit        |   0 to 255
 Signed 8 bit          |   -128 to 127
-Unsigned 16 bit       |   0 to 16
+Unsigned 16 bit       |   0 to 65536
 Signed 16 bit         |   -32768 to 32767
 Unsigned 32 bit       |   0 to 4294967295
 Signed 32 bit         |   -2147483648 to 2147483647
