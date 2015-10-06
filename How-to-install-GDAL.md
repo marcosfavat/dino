@@ -33,3 +33,22 @@ To test the install open Blender Python console and type:
 `from osgeo import gdalnumeric`
 
 These statements should not return error.
+
+
+### Mac Osx
+
+*Tested on Yosemite 10.10 and Blender 2.74*
+**1) Install Xcode and Macports from this link :**
+ https://www.macports.org/install.php
+
+**2) Install gdal and gdal python bindings**
+Open a terminal from spotlight or from Applications => Utilities => Terminal
+Then type with administratives rights : 
+> sudo port install gdal py34-gdal
+
+**3) Copy osgeo folder from python bindings to blender**
+> cp -rf /opt/local/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/osgeo /**where_you_put_blender_on_your_mac**/Blender/blender.app/Contents/Resources/2.74/scripts/modules/
+
+Replace **where_you_put_blender_on_your_mac** with the path where you run or install Blender
+
+Test it in Blender Python console like windows installation.
