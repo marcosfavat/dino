@@ -38,6 +38,7 @@ These statements should not return error.
 ### Mac Osx
 
 *Tested on Yosemite 10.10 and Blender 2.74*
+
 **1) Install Xcode and Macports from this link :**
  https://www.macports.org/install.php
 
