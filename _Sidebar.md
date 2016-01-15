@@ -12,8 +12,8 @@
     * [[Scale DEM dataset]]
     * [[Prepare DEM data with QGIS]]
     * [[How to install GDAL]]
-* Terrain analysis (height, slope, aspect)
-    * [[Node setup builder]]
-    * [[Color gradient and reclassification]]
+* Terrain analysis
+    * [[Materials node setup builder]]
+    * [[Reclassify color gradient]]
 * [[Make a georef render]]
 * [[Make terrain mesh with Delaunay triangulation]]

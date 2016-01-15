@@ -8,24 +8,24 @@ Description to do
 
 **Quick color gradient edit**
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_quick_gradient)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_quick_gradient.jpg)
 
 Description to do
 
 **Use SVG gradient**
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_svg_gradient)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_svg_gradient.jpg)
 
 Description to do
 
 **Export to SVG**
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_export_svg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_export_svg.jpg)
 
 Description to do
 
 **Auto reclass**
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_auto)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_auto.jpg)
 
 Description to do
