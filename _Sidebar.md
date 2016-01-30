@@ -12,7 +12,7 @@
     * [[Scale DEM dataset]]
     * [[Prepare DEM data with QGIS]]
     * [[How to install GDAL]]
-* Terrain analysis
+* [[Terrain analysis]]
     * [[Materials node setup builder]]
     * [[Reclassify color gradient]]
 * [[Make a georef render]]
