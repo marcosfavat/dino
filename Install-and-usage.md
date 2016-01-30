@@ -1,11 +1,19 @@
 **Install and usage**
 
-Just copy paste the files to  
+Download source archive from github.
+
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/install_git_download.jpg)
+
+Unzip the archive and then just copy paste the content of the main folder to  
 *Blender_install_folder\2.xx\scripts\addons*
 
-Don’t forget to unable the addons in Blender user’s preferences
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/install_unzip_copy_paste.jpg)
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/enable_addons.jpeg)
+**Please don't use Blender *install from file* option with the github archive, it will not work !**
+
+Don’t forget to enable the addons in Blender user’s preferences
+
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/install_enable_addons.jpeg)
 
 *Shapefile import/export* and *georaster import* are available within the standard menu
 
@@ -17,4 +25,4 @@ Note that georaster import script rely on Numpy which is ship with Blender since
 
 *Delaunay/voronoi* and *georef cam* tools are available in the 3d view tool sheft, in a dedicaced tab named *GIS*.
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/tools_tab_gis.jpeg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/install_tools_tab_gis.jpeg)
