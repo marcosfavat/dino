@@ -13,7 +13,7 @@ When launched it build three new materials and add a new material slot to the ac
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_height_map_example.jpg)
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_height_map_node_setup.jpg)
 
-This node setup is specific to the object on which the material is applied because it depends on the bounding box of the object and currently there is no node to get bounding box attribute of an object. So, the script add 2 *Value* nodes for zmin and zmax properties.
+This node setup is specific to the object on which the material is applied because it depends on the bounding box of the object and currently there is no node to get bounding box attribute of an object. So, the script add 2 *Value* nodes for specify zmin and zmax properties.
 
 To get Z values of the mesh we use the *Position* attribute of the *Geometry* node, witch provide object coordinates in world space. *Separate XYZ* node is used to extract Z component of the vector.
 
@@ -31,6 +31,8 @@ When normalize between 0 to 1, we get:
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_height_map_node_group.jpg)
 
+Note that if `inMin = 0` then `outValue = inValue / inMax`, it's the formula we'll use to normalize angle values in Slope and Aspect material node setup.
+
 **Slope map**
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_slope_map_example.jpg)
@@ -43,9 +45,9 @@ Slope is the angle between face normal vector and Z axis vector. From linear alg
 Computing the dot product between normal and z axis is equivalent to extract Z component of the normal vector
 `N.Z = (x,y,z).(0,0,1) = Z`
 
-*Geometry* node provides normal vector in global space (*True Normal* ignore smooth shading) and *Separate XYZ* node is used to extract Z component of the vector. Then we compute arc-cosine and convert radians to degrees by multiplying by 180/pi.
+*Geometry* node provides normal vector in world space and *Separate XYZ* node is used to extract Z component of the vector. Then we compute arc-cosine and convert radians to degrees by multiplying by 180/pi.
 
-Angles must be normalized to get values range from 0 to 1 before connecting color ramp node. The values returning by arc-cosine are range from 0 to 180°, but the slope of a terrain will never exceeds 90 ° (vertical cliff). So it's more convenient to normalize values by 100° because in this case we can easily link a slope value to it's color ramp position, for example a position of 0.5 in the color ramp node corresponds to a slope of 50°.
+Angles must be normalized to get values range from 0 to 1 before connecting color ramp node. The values returning by arc-cosine are range from 0 to 180°, but the slope of a terrain will never exceeds 90° (vertical cliff). So it's more convenient to normalize values by 100° because in this case we can easily link a slope value to it's color ramp position, for example a position of 0.5 in the color ramp node corresponds to a slope of 50°.
 
 **Aspect map**
 
@@ -58,7 +60,7 @@ Computing azimuth can be summarized to a 2D problem by taking face normal vector
 
 **`aspect = atan(x/y)`**
 
-*Geometry* node provides normal vector (*True Normal* ignore smooth shading) and projection is obtained by setting Z component to zero. Then we compute arc-tangent and convert radians to degrees by multiplying by 180/pi.
+*Geometry* node provides normal vector in world space and projection is obtained by setting Z component to zero. Then we compute arc-tangent and convert radians to degrees by multiplying by 180/pi.
 
 Azimuth angle must be corrected according to the quadrant where the tangent is computed. This correction can be obtained by following 2 simples rules :
 * Add 180° if y is negative
