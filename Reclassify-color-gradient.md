@@ -16,7 +16,7 @@ Values display in reclassify panel are converted to represents their physical eq
 
 ### **Color gradient settings**
 
-* #### **Quick color gradient edit**
+#### **Quick color gradient edit**
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_quick_gradient.jpg)
 
@@ -43,14 +43,12 @@ This addon is packaged with a few SVG color ramp. All these ramp are pick up fro
 You can export actual color ramp node configuration to svg files. This file will be stored in *Blender_install_folder\2.xx\scripts\addons\terrain_analysis\gradients* folder, so the ramp is added to the library and can be immediatly reused.
 
 There are 2 methods to build the svg file:
-* *Use actual stops*
-* *Interpolate n colors*
+* **Use actual stops** build svg ramp with exactly the same positions and colors currently define in the color ramp node. There is on interpolation.
+* **Interpolate n colors** produce a svg gradient with a predefined number of colors interpolate from the color ramp node definition. The interpolation options of the popup window will only be used along with this method.
 
-SVG gradient can be continuous or discrete
+SVG gradient can be continuous or discrete, use the dedicaced checkbox to produce one or the other type.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/gradient_type.png)
-
-The interpolation options is only used when you choose *Interpolate n colors* method.
 
 #### **About color space and interpolation methods**
 
@@ -70,4 +68,8 @@ You can use several algorithms for interpolation:
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_auto.jpg)
 
-Description to do
+This tool allows to automatically classify the values following specified rules:
+* **Fixed classes number** produce an predefined number of classes by divided equally the entire range of data values. The interval is determined by the desired number of classes. Note that for define x classes w need x+1 stops in the color ramp.
+* **Equal interval value** produce a similar result but instead of predefining the number of classes, we define the interval. The number of classes is determined by the desired interval.
+* **Target interval value** make a stop for each multiple of the target value.
+* **Aspect reclassification**
