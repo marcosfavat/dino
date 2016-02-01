@@ -14,9 +14,9 @@ Values display in reclassify panel are converted to represents their physical eq
 
 ### **Manual editing**
 
-### **Color gradient setting**
+### **Color gradient settings**
 
-#### **Quick color gradient edit**
+* #### **Quick color gradient edit**
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_quick_gradient.jpg)
 
