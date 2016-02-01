@@ -16,17 +16,17 @@ Values display in reclassify panel are converted to represents their physical eq
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_manual_edits.jpg)
 
-You can directly edit in the panel color and position of each stops of the color ramp node. You can also add a new stop or delete and existing one.
+You can directly edit in the panel color and position of each stops of the color ramp node. You can also add a new stop or delete an existing one.
 
 ### **Color gradient settings**
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/gradient_reverse.jpg)
 
-You can switch color ramp node interpolation between *constant* and *linear*. Linear interpolation make a continious ramp while constant make a discrete ramp.
+You can switch color ramp node interpolation between *constant* and *linear*. Linear interpolation make a continuous ramp while constant interpolation make a discrete ramp.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/gradient_switch.jpg)
 
-You can also reverse the color ramp. Note that this tool doesn't work like the tool include in the color ramp node because it reverse only the colors and not the positions
+You can also reverse the color ramp. Note that this tool doesn't work like the tool include in the color ramp node because it reverse only the colors and not the positions.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/gradient_reversed.jpg)
 
@@ -63,8 +63,8 @@ Like previous tool, for each stop of the color ramp node, the script evaluate by
 You can export actual color ramp node configuration to svg files. This file will be stored in *Blender_install_folder\2.xx\scripts\addons\terrain_analysis\gradients* folder, so the ramp is added to the library and can be immediatly reused.
 
 There are 2 methods to build the svg file:
-* **Use actual stops** build svg ramp with exactly the same positions and colors currently define in the color ramp node. There is no interpolation.
-* **Interpolate n colors** produce a svg gradient with a predefined number of colors interpolate from the color ramp node definition. The interpolation options of the popup window will only be used along with this method.
+* ***Use actual stops*** build svg ramp with exactly the same positions and colors currently define in the color ramp node. There is no interpolation.
+* ***Interpolate n colors*** produce a svg gradient with a predefined number of colors interpolate from the color ramp node definition. The interpolation options of the popup window will only be used along with this method.
 
 SVG gradient can be continuous or discrete, use the dedicated checkbox to produce one or the other type.
 
