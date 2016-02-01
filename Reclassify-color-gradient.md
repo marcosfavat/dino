@@ -13,7 +13,7 @@ Values display in reclassify panel are converted to represents their physical eq
 * **Aspect** mode multiply the value by 360 to get azimuth angle (with north = 0°)
 
 
-**Quick color gradient edit**
+***Quick color gradient edit***
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_quick_gradient.jpg)
 
@@ -56,9 +56,9 @@ Interpolation can be computed through RGB or HSV color space. HSV interpolation 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/gradient_hsv.png)
 
 You can use several algorithms for interpolation:
-* Linear is the most simple way but this method do not provides a smooth interpolation.
-* Spline interpolation use the Akima method instead of the well know Cubic spline. The disadvantage of cubic splines is that they could oscillate in the neighborhood of an outlier while the Akima spline is less affected by them.
+* **Linear** is the most simple way but this method do not provides a smooth interpolation.
+* **Spline** interpolation gives smooth results. Here we use the Akima method instead of the well know Cubic spline. The disadvantage of cubic splines is that they could oscillate in the neighborhood of an outlier while the Akima spline is less affected by them.
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/gradient_interpo_graph.png)
-* Discrete isn't an interpolation method, it just return the previous color.
-* Nearest isn't an interpolation method, it just return the nearest color.
+* **Discrete** isn't an interpolation method, it just return the previous color.
+* **Nearest** isn't an interpolation method, it just return the nearest color.
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/gradient_interpo_nearest.png)
