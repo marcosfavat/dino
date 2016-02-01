@@ -69,7 +69,7 @@ You can use several algorithms for interpolation:
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_auto.jpg)
 
 This tool allows to automatically classify the values following specified rules:
-* **Fixed classes number** produce an predefined number of classes by divided equally the entire range of data values. The interval is determined by the desired number of classes. Note that for define x classes w need x+1 stops in the color ramp.
+* **Fixed classes number** produce an predefined number of classes by divided equally the entire range of data values. The interval is determined by the desired number of classes. Note that for define x classes we need x+1 stops in the color ramp.
 * **Equal interval value** produce a similar result but instead of predefining the number of classes, we define the interval. The number of classes is determined by the desired interval.
-* **Target interval value** make a stop for each multiple of the target value.
+* **Target interval value** make a stop for each multiple of the target value. This method is ideal if you want to classifying with an *absolute step* value. The intervals will not be necessary equals.
 * **Aspect reclassification**
