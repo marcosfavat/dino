@@ -16,9 +16,19 @@ Values display in reclassify panel are converted to represents their physical eq
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_manual_edits.jpg)
 
+You can directly edit in the panel color and position of each stops of the color ramp node. You can also add a new stop or delete and existing one.
+
 ### **Color gradient settings**
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/gradient_reverse.jpg)
+
+You can switch color ramp node interpolation between *constant* and *linear*. Linear interpolation make a continious ramp while constant make a discrete ramp.
+
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/gradient_switch.jpg)
+
+You can also reverse the color ramp. Note that this tool doesn't work like the tool include in the color ramp node because it reverse only the colors and not the positions
+
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/gradient_reversed.jpg)
 
 #### **Quick color gradient edit**
 
@@ -30,7 +40,7 @@ The colors are displaying in the popup dialog and represents the expected colors
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_quick_gradient_details.jpg)
 
-For each stop of the color ramp node, the script evaluate the color in the desired gradient at the stop position. For example, color at position 0.5 will be computed by interpolating between color 3 and color 4.
+For each stop of the color ramp node, the script evaluate the color inside the desired gradient at the stop position. For example, color at position 0.5 will be computed by interpolating between color 3 and color 4.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_quick_gradient_examples.jpg)
 
@@ -44,7 +54,7 @@ Sometimes, there is no stops at the bounds of the color ramp node (positions 0 a
 
 This addon is packaged with a few SVG color ramp. All these ramp are pick up from the [cpt-city archive](http://soliton.vm.bytemark.co.uk/pub/cpt-city/). SVG files are stored in *Blender_install_folder\2.xx\scripts\addons\terrain_analysis\gradients*. You can add, edit or remove svg file from here to manage your color ramp library.
 
-Like previous tool, for each stop of the color ramp node, the script evaluate by interpolation the color in the svg gradient at the corresponding stop position.
+Like previous tool, for each stop of the color ramp node, the script evaluate by interpolation the color inside the svg gradient at the corresponding stop position.
 
 #### **Export to SVG**
 
@@ -53,10 +63,10 @@ Like previous tool, for each stop of the color ramp node, the script evaluate by
 You can export actual color ramp node configuration to svg files. This file will be stored in *Blender_install_folder\2.xx\scripts\addons\terrain_analysis\gradients* folder, so the ramp is added to the library and can be immediatly reused.
 
 There are 2 methods to build the svg file:
-* **Use actual stops** build svg ramp with exactly the same positions and colors currently define in the color ramp node. There is on interpolation.
+* **Use actual stops** build svg ramp with exactly the same positions and colors currently define in the color ramp node. There is no interpolation.
 * **Interpolate n colors** produce a svg gradient with a predefined number of colors interpolate from the color ramp node definition. The interpolation options of the popup window will only be used along with this method.
 
-SVG gradient can be continuous or discrete, use the dedicaced checkbox to produce one or the other type.
+SVG gradient can be continuous or discrete, use the dedicated checkbox to produce one or the other type.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/gradient_type.png)
 
@@ -85,5 +95,5 @@ This tool allows to automatically classify the values following specified rules:
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_auto_interval.jpg)
 * **Target interval value** make a stop for each multiple of the target value. This method is ideal if you want to classifying with an *absolute step* value. The intervals will not be necessary equals.
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_auto_target.jpg)
-* **Aspect reclassification** is a specific method dedicaced to aspect. The number of classes determine the number of azimuth represented.
+* **Aspect reclassification** is a specific method dedicated to aspect map. The number of classes determine the number of azimuth represented.
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_auto_aspect.jpg)
