@@ -14,7 +14,11 @@ Values display in reclassify panel are converted to represents their physical eq
 
 ### **Manual editing**
 
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_manual_edits.jpg)
+
 ### **Color gradient settings**
+
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/gradient_reverse.jpg)
 
 #### **Quick color gradient edit**
 
@@ -22,9 +26,13 @@ Values display in reclassify panel are converted to represents their physical eq
 
 This tool allows to change colors of each stops of the color ramp node by refering to a small gradient defined on the fly by the user. This gradient defines at least 2 colors and up to 5.
 
-The colors are displaying in the popup dialog and represents the expected colors at positions 0 - 0.25 - 0.5 - 0.75 - 1. The 3 intermediates colors are optional, they'll be used only if the checkbox bellow them are enabled.
+The colors are displaying in the popup dialog and represents the expected colors at positions 0 - 0.2 - 0.4 - 0.6 - 0.8 - 1. The 3 intermediates colors are optionals, they'll be used only if the checkbox bellow them are enabled.
 
-For each stop of the color ramp node, the script evaluate the color in the desired gradient at the stop position. For example, color at position 0.4 will be computed by interpolating between color 2 and color 3.
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_quick_gradient_details.jpg)
+
+For each stop of the color ramp node, the script evaluate the color in the desired gradient at the stop position. For example, color at position 0.5 will be computed by interpolating between color 3 and color 4.
+
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_quick_gradient_examples.jpg)
 
 Sometimes, there is no stops at the bounds of the color ramp node (positions 0 and 1). To fit the quick gradient definition to this special case you can use the dedicated option.
 
@@ -35,6 +43,8 @@ Sometimes, there is no stops at the bounds of the color ramp node (positions 0 a
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_svg_gradient.jpg)
 
 This addon is packaged with a few SVG color ramp. All these ramp are pick up from the [cpt-city archive](http://soliton.vm.bytemark.co.uk/pub/cpt-city/). SVG files are stored in *Blender_install_folder\2.xx\scripts\addons\terrain_analysis\gradients*. You can add, edit or remove svg file from here to manage your color ramp library.
+
+Like previous tool, for each stop of the color ramp node, the script evaluate by interpolation the color in the svg gradient at the corresponding stop position.
 
 #### **Export to SVG**
 
@@ -70,6 +80,10 @@ You can use several algorithms for interpolation:
 
 This tool allows to automatically classify the values following specified rules:
 * **Fixed classes number** produce an predefined number of classes by divided equally the entire range of data values. The interval is determined by the desired number of classes. Note that for define x classes we need x+1 stops in the color ramp.
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_auto_classes.jpg)
 * **Equal interval value** produce a similar result but instead of predefining the number of classes, we define the interval. The number of classes is determined by the desired interval.
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_auto_interval.jpg)
 * **Target interval value** make a stop for each multiple of the target value. This method is ideal if you want to classifying with an *absolute step* value. The intervals will not be necessary equals.
-* **Aspect reclassification**
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_auto_target.jpg)
+* **Aspect reclassification** is a specific method dedicaced to aspect. The number of classes determine the number of azimuth represented.
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_auto_aspect.jpg)
