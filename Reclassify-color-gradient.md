@@ -13,7 +13,7 @@ Values display in reclassify panel are converted to represents their physical eq
 * **Aspect** mode multiply the value by 360 to get azimuth angle (with north = 0°)
 
 
-# **Quick color gradient edit**
+### **Quick color gradient edit**
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_quick_gradient.jpg)
 
