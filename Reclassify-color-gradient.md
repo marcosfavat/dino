@@ -14,17 +14,23 @@ Values display in reclassify panel are converted to represents their physical eq
 
 ### **Manual editing**
 
-### **Gradient edits**
+### **Color gradient setting**
 
 #### **Quick color gradient edit**
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_quick_gradient.jpg)
 
-Description to do
+This tool allows to change colors of each stops of the color ramp node by refering to a small gradient defined on the fly by the user. This gradient defines at least 2 colors and up to 5.
+
+The colors are displaying in the popup dialog and represents the expected colors at positions 0 - 0.25 - 0.5 - 0.75 - 1. The 3 intermediates colors are optional, they'll be used only if the checkbox bellow them are enabled.
+
+For each stop of the color ramp node, the script evaluate the color in the desired gradient at the stop position. For example, color at position 0.4 will be computed by interpolating between color 2 and color 3.
+
+Sometimes, there is no stops at the bounds of the color ramp node (positions 0 and 1). To fit the quick gradient definition to this special case you can use the dedicated option.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/gradient_fit.jpg)
 
-#### **Use SVG gradient**
+#### **Import SVG gradient**
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_svg_gradient.jpg)
 
