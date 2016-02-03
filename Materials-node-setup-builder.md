@@ -74,4 +74,4 @@ Also, flat angle is a special case that must be considered separately. Here we u
 
 You can use mixRGB node to overlay aerial photography or topographic map a terrain analysis.
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_overlay.png)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_overlay.jpg)
