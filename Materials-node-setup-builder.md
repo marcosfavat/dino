@@ -69,3 +69,9 @@ Azimuth angle must be corrected according to the quadrant where the tangent is c
 Finally angle must be normalized by 360° to get values range from 0 to 1 before connecting color ramp node.
 
 Also, flat angle is a special case that must be considered separately. Here we use a mix shader to define a specific color to flat area.
+
+**Overlay**
+
+You can use mixRGB node to overlay aerial photography or topographic map a terrain analysis.
+
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_overlay.png)
