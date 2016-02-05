@@ -11,7 +11,7 @@ When launched it build three new materials and add a new material slot to the ac
 **Height map**
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_height_map_example.jpg)
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_height_map_node_setup.jpg)
+[![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_height_map_node_setup.jpg)](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_height_map_node_setup.jpg)
 
 This node setup is specific to the object on which the material is applied because it depends on the bounding box of the object and currently there is no node to get bounding box attribute of an object. So, the script add 2 *Value* nodes for specify zmin and zmax properties.
 
@@ -36,7 +36,7 @@ Note that if `inMin = 0` then `outValue = inValue / inMax`, it's the formula we'
 **Slope map**
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_slope_map_example.jpg)
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_slope_map_node_setup.jpg)
+[![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_slope_map_node_setup.jpg)](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_slope_map_node_setup.jpg)
 
 Slope is the angle between face normal vector and Z axis vector. From linear algebra we know that the dot product of 2 vectors equals to cos(alpha) where alpha is the angle between these vectors.
 
@@ -52,7 +52,7 @@ Angles must be normalized to get values range from 0 to 1 before connecting colo
 **Aspect map**
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_aspect_map_example.jpg)
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_aspect_map_node_setup.jpg)
+[![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_aspect_map_node_setup.jpg)](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_aspect_map_node_setup.jpg)
 
 Computing azimuth can be summarized to a 2D problem by taking face normal vector and project it on XY plane.
 
@@ -74,4 +74,4 @@ Also, flat angle is a special case that must be considered separately. Here we u
 
 You can use mixRGB node to overlay aerial photography or topographic map to one of these analysis.
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_overlay.jpg)
+[![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_overlay.jpg)](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_overlay.jpg)
