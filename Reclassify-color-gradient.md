@@ -95,6 +95,7 @@ This tool allows to automatically classify the values following specified rules:
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_auto_interval.jpg)
 * **Target interval value** make a stop for each multiple of the target value. This method is ideal if you want to classifying with an *absolute step* value. The intervals will not be necessary equals.
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_auto_target.jpg)
-* **Quantile** classification assigns the same number of data values to each class.
+* **Quantile** classification assigns the same number of data values to each class.  
+* **Natural break** classification determine the best arrangement of values into different classes. It use an optimization on kmeans algorithm to the case of one dimensionnal data. Results are similar to the well know Jenks natural breaks classification.
 * **Aspect reclassification** is a specific method dedicated to aspect map. The number of classes determine the number of azimuth represented.
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_auto_aspect.jpg)
