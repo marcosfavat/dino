@@ -34,13 +34,11 @@ You can also reverse the color ramp. Note that this tool doesn't work like the t
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_quick_gradient.jpg)
 
-This tool allows to change colors of each stops of the color ramp node by refering to a small gradient defined on the fly by the user. This gradient defines at least 2 colors and up to 5.
+This tool allows to change colors of each stops of the color ramp node by refering to a small gradient defined on the fly by the user. For each stop of the color ramp node, the script will use this user defined gradient to evaluate the color at this stop's position.
 
-The colors are displaying in the popup dialog and represents the expected colors at positions 0 - 0.2 - 0.4 - 0.6 - 0.8 - 1. The 3 intermediates colors are optionals, they'll be used only if the checkbox bellow them are enabled.
+For example, if we define a gradient with 5 colors then the preview display in the popup dialog represents the expected colors at positions 0 - 0.2 - 0.4 - 0.6 - 0.8 - 1. In the node, the color at position 0.5 will be computed by interpolating between color 3 and color 4.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_quick_gradient_details.jpg)
-
-For each stop of the color ramp node, the script evaluate the color inside the desired gradient at the stop position. For example, color at position 0.5 will be computed by interpolating between color 3 and color 4.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/analysis_reclassify_quick_gradient_examples.jpg)
 
