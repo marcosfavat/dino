@@ -1,10 +1,10 @@
-This tool import common image format associated with a world file that georeference it.
+This tool import common image format associated with a world file that georeference it or **geotiff** file that embed georeferencing informations directly in tiff tags.
 
 **Worldfile**
 
 A world file is a plain text file used to georeference raster map images. It describes the location, scale and rotation of the map.
 
-The world file extension can be *.wld or must be respect one of these conventions: 
+The world file extension can be *.wld or must be respect one of these conventions:
 
 Image extension     |   World file extension
 --------------------|-----------------------------------
@@ -12,8 +12,6 @@ tif                 |   tfw / tfwx / tifw
 jpg                 |   jgw / jgwx / jpgw
 bmp                 |   bpw / bpwx / bmpw
 png                 |   pgw / pgwx / pngw
-
-You can't import a raster without his worldfile.
 
 A worldfile has six-line with decimal numbers on each.
 
@@ -74,4 +72,3 @@ The raster is applied on mesh as a material texture. This material is setting vi
 * If the imported image appeared fully black, try to config. the light according to the scene (for example try the sun light type)
 
 * Because the scene can be very large, don’t forget to configure camera clipping distance according to the scene. If you still see black faces error on render image after setting clip end distance try to set the clip start distance closer to the scene, it will help Blender to improve vertex position according to the Z depth of the camera.
-

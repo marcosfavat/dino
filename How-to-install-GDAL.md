@@ -1,30 +1,34 @@
 [GDAL](http://gdal.org/) is a popular and powerful geospatial data processing library. GDAL is available as a set of commandline utilities (ready to use binaries files). The developer oriented library is available as a C/C++ API. Bindings in other languages, including Python, are also available.
 
-Actually installing binary files is good enought to get the addon working as well. You can also use GDAL Python API but in this case you need to install the binding.
+**GDAL is an optional dependency**, all the functionalities of BlenderGIS are available without it. It will be used only if possible and only for georaster import with the *As DEM* option.
+
+### Linux
+
+GDAL binary and Python binding are available par ubuntugis repository
+
+`sudo add-apt-repository ppa:ubuntugis-unstable`
+`sudo apt-get install gdal-bin`
+`sudo apt-get install python3-gdal`
+`sudo apt-get install python3-numpy`
+
+Install Blender from a repository instead of ready to use tarballs from blender.org.
+
+`sudo add-apt-repository ppa:thomas-schiex/blender`
+
+Installing through this way, Blender will use the version of Python existing one the system instead of it's own bundle version.
+
 
 ### Windows
 
-**Binaries (executables)**
+On Windows, the most easiest way to install GDAL Python Binding is to use the packages available [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal). Note that these distributions also includes GDAL binary files.
 
-Core binary file can be downloaded from [gisinternals.com](http://www.gisinternals.com/sdk/). Scroll down to *release versions* table and click on the relevant link in the *Downloads* column (32 or 64 bit). From the new page download the GDAL core file (*gdal-[version]-[build]-core.msi*).
+You need pip to install *.whl package files. The Python installation bundle with Blender do not include pip but include distutils. So it's possible to run [get-pip.py](https://bootstrap.pypa.io/get-pip.py) to install pip :
 
-Using binary files needs to edit environmental variables like this:
+`blender_install_folder\2.7x\python\bin\python.exe get-pip.py`
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/varEnvGDAL.jpg)
+And then install the wheel:
 
-**Python binding**
-
-Installing Python binding from setup file requires that Python exists on your computer. So the first step is to install [Python](https://www.python.org/downloads/). Choose the version that match the one delivered with Blender.
-
-Python binding is available from gisinternals.com, but this package isn't compiled accross Numpy. Without Numpy, the binding will not have all of its functionality and can not be used with the addon.
-
-Fortunately other Python packages can be found [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal). Note that this distribution also includes GDAL binary files.
-
-GDAL Python binding installer creates a new folder named osgeo in *C:\Python33\Lib\site-packages*. If you already installed binary files you can delete \*.exe and \*.dll files from osgeo folder, they will not be used.
-
-Finally, to get GDAL working in Blender, just copy osgeo folder in Python tree folder of Blender (*C:\Program Files\Blender Foundation\Blender\2.70\python\lib\site-packages*). 
-
-Note that Numpy version uses to compile GDAL binding needs to match the version ship with Blender.
+`blender_install_folder\2.7x\python\bin\python.exe -m pip install GDAL-2.0.2-cp34-none-win_amd64.whl`
 
 To test the install open Blender Python console and type:
 
@@ -32,24 +36,26 @@ To test the install open Blender Python console and type:
 
 `from osgeo import gdalnumeric`
 
-These statements should not return error.
+These statements should not return error. If gdalnumeric import raise an error it's because Numpy version uses to compile GDAL binding needs to match the version ship with Blender. So in this case just update Numpy with the [corresponding package](http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy)
 
 
 ### Mac Osx
 
 *Tested on Yosemite 10.10 and Blender 2.74*
 
-**1) Install Xcode and Macports from this link :**
+1) Install Xcode and Macports from this link :
  https://www.macports.org/install.php
 
-**2) Install gdal and gdal python bindings**
+2) Install gdal and gdal python bindings
 Open a terminal from spotlight or from Applications => Utilities => Terminal
-Then type with administratives rights : 
-> sudo port install gdal py34-gdal
+Then type with administratives rights :
 
-**3) Copy osgeo folder from python bindings to blender**
-> cp -rf /opt/local/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/osgeo /**where_you_put_blender_on_your_mac**/Blender/blender.app/Contents/Resources/2.74/scripts/modules/
+`sudo port install gdal py34-gdal`
 
-Replace **where_you_put_blender_on_your_mac** with the path where you run or install Blender
+3) Copy osgeo folder from python bindings to blender
+
+`cp -rf /opt/local/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages/osgeo /**where_you_put_blender_on_your_mac**/Blender/blender.app/Contents/Resources/2.74/scripts/modules/`
+
+Replace *where_you_put_blender_on_your_mac* with the path where you run or install Blender
 
 Test it in Blender Python console like windows installation.

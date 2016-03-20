@@ -1,4 +1,4 @@
-**Install and usage**
+*Please don't except a success story if you don't really know what you are trying to import in Blender... Use [QGIS](http://www.qgis.org), to explore your data beforehand*
 
 Download source archive from github.
 

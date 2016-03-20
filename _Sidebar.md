@@ -8,9 +8,7 @@
 * Raster map image data
     * [[Import georef raster]]
     * [[Import DEM grid]]
-    * [[Import DEM grid using GDAL]]
-    * [[Scale DEM dataset]]
-    * [[Prepare DEM data with QGIS]]
+    * [[QGIS tips]]
     * [[How to install GDAL]]
 * [[Terrain analysis]]
     * [[Materials node setup builder]]
