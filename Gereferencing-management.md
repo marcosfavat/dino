@@ -4,6 +4,6 @@ That's why it's necessary to create the mesh near to the scene origin. For avoid
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/custom_props.jpeg)
 
-When you try to import a shapefile or a georaster, if the scene already contains these custom properties,then blenderGIS will use them to adjust the position of the new imported object.
+When you try to import a shapefile or a georaster, if the scene already contains these custom properties, then BlenderGIS will use them to adjust the position of the new imported object.
 
 **The overlay will be correct only if the geographic projection system is the same.** Note that one Blender unit = one map coordinates system unit. So, units depend on your data.
