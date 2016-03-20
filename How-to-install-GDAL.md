@@ -4,7 +4,7 @@
 
 ### Linux
 
-GDAL binary and Python binding are available par ubuntugis repository
+GDAL binary and Python binding are available through ubuntugis repository
 
 `sudo add-apt-repository ppa:ubuntugis-unstable`
 
