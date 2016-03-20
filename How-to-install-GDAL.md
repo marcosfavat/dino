@@ -7,8 +7,11 @@
 GDAL binary and Python binding are available par ubuntugis repository
 
 `sudo add-apt-repository ppa:ubuntugis-unstable`
+
 `sudo apt-get install gdal-bin`
+
 `sudo apt-get install python3-gdal`
+
 `sudo apt-get install python3-numpy`
 
 Install Blender from a repository instead of ready to use tarballs from blender.org.

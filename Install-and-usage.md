@@ -1,4 +1,6 @@
-*Please don't except a success story if you don't really know what you are trying to import in Blender... Use [QGIS](http://www.qgis.org), to explore your data beforehand*
+*Please don't except a success story if you don't really know what you are trying to import in Blender... Use [QGIS](http://www.qgis.org), to explore your data beforehand.*
+
+**Install**
 
 Download source archive from github.
 
@@ -14,6 +16,8 @@ Unzip the archive and then just copy paste the content of the main folder to
 Don’t forget to enable the addons in Blender user’s preferences
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/install_enable_addons.jpeg)
+
+**Usage**
 
 *Shapefile import/export* and *georaster import* are available within the standard menu
 
