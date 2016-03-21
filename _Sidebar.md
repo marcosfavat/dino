@@ -13,5 +13,6 @@
 * [[Terrain analysis]]
     * [[Materials node setup builder]]
     * [[Reclassify color gradient]]
-* [[Make a georef render]]
-* [[Make terrain mesh with Delaunay triangulation]]
+* Utilities
+    * [[Make a georef render]]
+    * [[Make terrain mesh with Delaunay triangulation]]
