@@ -18,12 +18,12 @@ Install Blender from a repository instead of ready to use tarballs from blender.
 
 `sudo add-apt-repository ppa:thomas-schiex/blender`
 
-Installing through this way, Blender will use the version of Python existing one the system instead of it's own bundle version.
+Installing through this way, Blender will use the version of Python existing on the system instead of it's own bundle version.
 
 
 ### Windows
 
-On Windows, the most easiest way to install GDAL Python Binding is to use the packages available [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal). Note that these distributions also includes GDAL binary files.
+On Windows, the most easiest way to install GDAL Python Binding is to use the packages available [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal). Choose the one that match the version of Python bundle with Blender. Note that these distributions also includes GDAL binary files.
 
 You need pip to install *.whl package files. The Python installation bundle with Blender do not include pip but include distutils. So it's possible to run [get-pip.py](https://bootstrap.pypa.io/get-pip.py) to install pip :
 
@@ -39,7 +39,7 @@ To test the install open Blender Python console and type:
 
 `from osgeo import gdalnumeric`
 
-These statements should not return error. If gdalnumeric import raise an error it's because Numpy version uses to compile GDAL binding needs to match the version ship with Blender. So in this case just update Numpy with the [corresponding package](http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy)
+These statements should not return error. If gdalnumeric import raise an error it's because Numpy version uses to compile GDAL binding doesn't match the version ship with Blender. So in this case just update Numpy with the [corresponding package](http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy)
 
 
 ### Mac Osx

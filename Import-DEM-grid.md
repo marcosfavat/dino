@@ -83,8 +83,7 @@ Midlevel represents texture value which will be treated as no displacement by th
 Where displacement is the target elevation change (altitude max - altitude min) and texture value is Blender color value.
 
 With float32 raster the strength value is just equal to 1 because Blender will directly report raw values as color intensity. But with non float raster, Blender will normalize values between 0.0 and 1.0. An intensity value of 1.0 in Blender equal to the maximum value that can be assigned in the raster dataset, so this value depends on raster bit depth  
-`texture value = delta Z / (2^depth-1)`  
-Finally  
+`texture value = delta Z / (2^depth-1)`   
 `Strength = delta Z / (delta Z / (2^depth-1))`  
 **`Strength = 2^depth-1`**
 
