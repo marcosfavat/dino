@@ -92,3 +92,11 @@ Note that signed 16 bits integer raster will always be cast to float to be usabl
 The script also sets some important parameters of the displacer texture:
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/georaster_Displacer_texture_Settings.jpeg)
+
+**Import Raw DEM**
+
+This option allows to create a point cloud from a DEM. It do not use the DEM as displacement texture.
+Step option can help to reduce the number of resulting points.
+
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/georaster_Mode_Raw_DEM.jpg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/georaster_Mode_Raw_DEM_result.jpg)
