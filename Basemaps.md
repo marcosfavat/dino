@@ -1,5 +1,9 @@
 
-This tool is still in developement and can be buggy or unstable
+Warnings:
+- This tool is still in developement and can be buggy or unstable
+- Georef infos are not compatible with others BlednerGIS tools
+- Service in Web Mercator projection do not give reliable distance measurement and are not suitable for precision modelling.
+
 
 Navigation (not yet fully implemented):
 - toogle map view : button panel or numpad asterix
