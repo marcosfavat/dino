@@ -1,7 +1,7 @@
 
 Warnings:
 - This tool is still in developement and can be buggy or unstable
-- Georef infos are not compatible with others BlednerGIS tools
+- Georef infos are not compatible with others BlenderGIS tools
 - Service in Web Mercator projection do not give reliable distance measurement and are not suitable for precision modelling.
 
 
