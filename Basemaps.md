@@ -16,7 +16,9 @@ Navigation (not yet fully implemented):
 - change scale : alt + mousewheel or alt + numpad + or numpad -
 
 
-You can add your own service by adding its definition in a json like syntax, directly in servicesDefs.py file. Support WMS, WMTS, TMS and definition of custom tile matrix.
+You can add your own service (WMS, WMTS, TMS) by adding its definition in a json like syntax directly in the file servicesDefs.py. You can also define your own custom tile matrix.
+
+Downloaded tiles are stored in an MBtiles cache for speed up upcoming request.
 
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/basemaps_demo.gif)
