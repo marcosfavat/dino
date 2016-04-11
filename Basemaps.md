@@ -3,7 +3,7 @@ Warnings:
 - This tool is still in developement and can be buggy or unstable
 - Georef infos are not compatible with others BlenderGIS tools
 - Service in Web Mercator projection do not give reliable distance measurement and are not suitable for precision modelling.
-- It depends on [Pillow](https://pypi.python.org/pypi/Pillow/3.2.0] and optionnaly on GDAL for support of others projections than web mercator.
+- It depends on ![Pillow](https://pypi.python.org/pypi/Pillow/3.2.0) and optionnaly on GDAL for support of others projections than web mercator.
 
 
 Navigation (not yet fully implemented):
@@ -18,7 +18,7 @@ Navigation (not yet fully implemented):
 
 You can add your own service (WMS, WMTS, TMS) by adding its definition in a json like syntax directly in the file servicesDefs.py. You can also define your own custom tile matrix.
 
-Downloaded tiles are stored in an MBtiles cache for speed up upcoming request.
+Downloaded tiles are stored in an SQLite cache (Geopackage) for speed up upcoming request.
 
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/basemaps_demo.gif)
