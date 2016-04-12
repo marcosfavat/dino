@@ -20,5 +20,9 @@ You can add your own service (WMS, WMTS, TMS) by adding its definition in a json
 
 Downloaded tiles are stored in an SQLite cache (Geopackage) for speed up upcoming request.
 
+Road map / todo:
+- The hard part, make ability to seed on the fly a cache in local projection from a source in global projection like web mercator. This is essential to make the tool usable with an acceptable precision.
+- Better UI with some sort of layers manager : toogle source on the fly, display and overlay several sources in the same time ...
+- Harmonize scene georeferencing of others BlenderGIS tools to this one. Ensure also compatibility with dxf import/export and BlenderGeo.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/basemaps_demo.gif)
