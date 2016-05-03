@@ -33,4 +33,4 @@ Road map / todo:
 - Better UI with some sort of layers manager : toogle source on the fly, display and overlay several sources in the same time ...
 - Harmonize scene georeferencing of others BlenderGIS tools to this one. Ensure also compatibility with dxf import/export and BlenderGeo.
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/basemaps_demo.gif)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/basemaps_demo2.gif)
