@@ -6,16 +6,16 @@ Warnings:
 - It depends on [Pillow](https://pypi.python.org/pypi/Pillow/3.2.0) and optionnaly on GDAL for reprojection support.
 
 
-Navigation (not yet fully implemented):
-- toogle map view : button panel or numpad asterix
-- exit map view : echap
-- switch layer : spacebar
-- search function : G (go to)
-- zoom map : mousewheel or numpad+ / numpad-
-- pan map : left click&drag or wheel click&drag or numpad 2,4,8,6
-- zoom 3dview : ctrl + mousewheel or ctrl + numpad+ or numpad-
-- pan 3dview : ctrl + left click&drag or ctrl + wheel click&drag or numpad 2,4,8,6
-- change scale : alt + mousewheel or alt + numpad+ or numpad-
+Navigation:
+- toogle map view : button panel or `numpad asterix`
+- exit map view : `echap`
+- switch layer : `spacebar`
+- search function : `G` (go to)
+- zoom map : `mousewheel` or `numpad+` and `numpad-`
+- pan map : `left click & drag` or `wheel click & drag` or `numpad 2,4,8,6`
+- zoom 3dview : `ctrl mousewheel` or `ctrl numpad+` and `ctrl numpad-`
+- pan 3dview : `ctrl left click & drag` or `ctrl wheel click & drag` or `numpad 2,4,8,6`
+- change scale : `alt mousewheel` or `alt numpad+` and `alt numpad-`
 
 
 You can add your own service (WMS, WMTS, TMS) by adding its definition in a json like syntax directly in the file servicesDefs.py. You can also define your own custom tile matrix. 
