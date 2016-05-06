@@ -7,15 +7,16 @@ Warnings:
 
 
 Navigation:
-- toogle map view : button panel or `numpad asterix`
-- exit map view : `echap`
-- switch layer : `spacebar`
-- search function : `G` (go to)
-- zoom map : `mousewheel` or `numpad+` and `numpad-`
-- pan map : `left click & drag` or `wheel click & drag` or `numpad 2,4,8,6`
-- zoom 3dview : `ctrl mousewheel` or `ctrl numpad+` and `ctrl numpad-`
-- pan 3dview : `ctrl left click & drag` or `ctrl wheel click & drag` or `numpad 2,4,8,6`
-- change scale : `alt mousewheel` or `alt numpad+` and `alt numpad-`
+- Toogle map view : button in panel or `numpad asterix`
+- Exit map view : `echap`
+- Switch layer : `spacebar`
+- Search function : `G` (go to)
+- Edit options : `O`
+- Zoom map : `mousewheel` or `numpad+` and `numpad-`
+- Pan map : `left click & drag` or `wheel click & drag` or `numpad 2,4,8,6`
+- Zoom 3d view : `ctrl mousewheel` or `ctrl numpad+` and `ctrl numpad-`
+- Pan 3d view : `ctrl left click & drag` or `ctrl wheel click & drag` or `numpad 2,4,8,6`
+- Change scale : `alt mousewheel` or `alt numpad+` and `alt numpad-`
 
 
 You can add your own service (WMS, WMTS, TMS) by adding its definition in a json like syntax directly in the file servicesDefs.py. You can also define your own custom tile matrix. 
