@@ -14,6 +14,7 @@ Navigation:
 - Edit options : `O`
 - Zoom map : `mousewheel` or `numpad+` and `numpad-`
 - Pan map : `left click & drag` or `wheel click & drag` or `numpad 2,4,8,6`
+- Zoom box : `B`
 - Zoom 3d view : `ctrl mousewheel` or `ctrl numpad+` and `ctrl numpad-`
 - Pan 3d view : `ctrl left click & drag` or `ctrl wheel click & drag` or `numpad 2,4,8,6`
 - Change scale : `alt mousewheel` or `alt numpad+` and `alt numpad-`
