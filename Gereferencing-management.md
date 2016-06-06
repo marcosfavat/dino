@@ -2,16 +2,16 @@ Blender (and most of 3d software) cannot strongly handle objects that are far aw
 
 For avoid georeferencing lost, BlenderGIS creates some custom properties to the scene.
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_idprops.jpeg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_idprops.jpg)
 
 Theses properties can be managed through the geoscene addon.
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_panel.jpeg)
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_prefs.jpeg)
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_set_crs.jpeg)
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_add_predef_crs.jpeg)
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_link_origin.jpeg)
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_broken.jpeg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_panel.jpg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_prefs.jpg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_set_crs.jpg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_add_predef_crs.jpg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_link_origin.jpg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_broken.jpg)
 
 
 wiki in progress ...
