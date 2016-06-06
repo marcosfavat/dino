@@ -1,9 +1,17 @@
-Blender (and most of 3d software) cannot strongly handle objects that are far away scene origin. Furthermore, Blender works with coordinates as single precision (float32). The single float value actually has about [7 significant digits of precision](http://en.wikipedia.org/wiki/Floating_point#Internal_representation). On the other hand, geographic data is stored across a projection system (generally in meters) that gives high coordinates values. Projected coordinates must be represented as double precision (float64).
+Blender (and most of 3d software) cannot strongly handle objects that are far away scene origin. Furthermore, Blender works with coordinates as single precision (float32). The single float value actually has about [7 significant digits of precision](http://en.wikipedia.org/wiki/Floating_point#Internal_representation). On the other hand, geographic data is stored across a projection system (generally in meters) that gives high coordinates values. Projected coordinates must be represented as double precision (float64). That's why it's necessary to create the mesh near to the scene origin.
 
-That's why it's necessary to create the mesh near to the scene origin. For avoid georeferencing lost, when you import a shapefile or a georaster, the script creates custom properties to the scene. Theses properties represent the shift values operate in X and Y axis.
+For avoid georeferencing lost, BlenderGIS creates some custom properties to the scene.
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/custom_props.jpeg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_idprops.jpeg)
 
-When you try to import a shapefile or a georaster, if the scene already contains these custom properties, then BlenderGIS will use them to adjust the position of the new imported object.
+Theses properties can be managed through the geoscene addon.
 
-**The overlay will be correct only if the geographic projection system is the same.** Note that one Blender unit = one map coordinates system unit. So, units depend on your data.
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_panel.jpeg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_prefs.jpeg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_set_crs.jpeg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_add_predef_crs.jpeg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_link_origin.jpeg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_broken.jpeg)
+
+
+wiki in progress ...
