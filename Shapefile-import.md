@@ -2,13 +2,6 @@ This tool can import in Blender most of shapefile feature type : point, pointZ, 
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/shp_import_options.jpg)
 
-**Setting elevation or extrusion with attributes data**
-
-You need to know & manually enter the name of the field that contains the values (don't worry about case sensitive).
-
-A little trick: when you try to import shapefile the script always print the fields name in the console, so if you don't remember what's the field name to use just try something and if it don't work check the correct name in the console and retry.
-
-Note that the extrusion can be very slow with lot of features but you can see progress output in Blender console.
 
 **Troubles**
 
