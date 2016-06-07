@@ -1,7 +1,7 @@
 
 Warnings:
 - This tool is still in developement and can be buggy or unstable
-- For now, georef infos are not compatible with others BlenderGIS tools
+- ~~For now, georef infos are not compatible with others BlenderGIS tools~~
 - Remember that service in Web Mercator projection do not give reliable distance measurement and are not suitable for precision modelling, use a local projection instead.
 - It depends on [Pillow](https://pypi.python.org/pypi/Pillow/3.2.0) and optionnaly on GDAL for reprojection support.
 
@@ -33,6 +33,6 @@ Downloaded tiles are stored in an SQLite cache (Geopackage) for speed up upcomin
 Road map / todo:
 - More tests and optimizations
 - Better UI with some sort of layers manager : toogle source on the fly, display and overlay several sources in the same time ...
-- Harmonize scene georeferencing of others BlenderGIS tools to this one. Ensure also compatibility with dxf import/export and BlenderGeo.
+- ~~Harmonize scene georeferencing of others BlenderGIS tools to this one. Ensure also compatibility with dxf import/export and BlenderGeo.~~
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/basemaps_demo.gif)
