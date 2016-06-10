@@ -4,6 +4,9 @@ Warnings:
 - ~~For now, georef infos are not compatible with others BlenderGIS tools~~
 - Remember that service in Web Mercator projection do not give reliable distance measurement and are not suitable for precision modelling, use a local projection instead.
 - It depends on [Pillow](https://pypi.python.org/pypi/Pillow/3.2.0) and optionnaly on GDAL for reprojection support.
+On Windows use the following commands to install Pillow:
+`blender_install_folder\2.7x\python\bin\python.exe -m ensurepip`
+`blender_install_folder\2.7x\python\bin\python.exe -m pip install pillow`
 
 
 Navigation:
