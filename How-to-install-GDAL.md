@@ -25,9 +25,9 @@ Installing through this way, Blender will use the version of Python existing on 
 
 On Windows, the most easiest way to install GDAL Python Binding is to use the packages available [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal). Choose the one that match the version of Python bundle with Blender. Note that these distributions also includes GDAL binary files.
 
-You need pip to install *.whl package files. The Python installation bundle with Blender do not include pip but include distutils. So it's possible to run [get-pip.py](https://bootstrap.pypa.io/get-pip.py) to install pip :
+You need pip to install *.whl package files. The Python installation bundle with Blender do not include pip but include distutils. So it's possible to install pip :
 
-`blender_install_folder\2.7x\python\bin\python.exe get-pip.py`
+`blender_install_folder\2.7x\python\bin\python.exe -m ensurepip`
 
 And then install the wheel:
 
