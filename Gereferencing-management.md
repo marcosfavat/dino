@@ -28,18 +28,58 @@ However, refering to longitude and latitude is not enough, we need to know what'
 
 BlenderGIS manage in priority the SRS coordinates of scene origin and update the corresponding longitude latitude if it can to do the math. Maintening angular coordinates up to date is useful to ensure compatibility with orthers addons witch prefers storing scene origin as longitude latitude.
 
+- **Map scale denominator**
+
+
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_sk_scale.jpg)
+
 
 **Geoscene addon**
 
 
-Theses properties can be managed through the geoscene addon.
+Theses properties can be managed through the geoscene addon which provides a panel showing current georeferencing informations and useful operators.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_panel.jpg)
+
+
+- **Predefinate CRS**
+
+
+Geoscene addon offers the possibility to define, save and manage a set of predefined Coordinate Reference System (CRS). 
+
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_prefs.jpg)
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_set_crs.jpg)
+
+Adding a new predefined CRS can be an easy task thanks http://epsg.io/ service it's possible to perfom a simple keyword search.
+
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_add_predef_crs.jpg)
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_link_origin.jpg)
+
+
+- **Georef manager**
+
+It's possible to switch the scene CRS
+
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_set_crs.jpg)
+
+
+A scene is considered correctly georeferenced when at least a valid CRS is defined and the coordinates of scene's origin in this CRS space is set. On the other hand a geoscene will be broken if the origin is set but not the CRS.
+
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_broken.jpg)
 
+Furthermore, if the origin is only set as longitude/latitude the geoscene still remains broken. However, there is a dedicated operator to update projected coordinates from angulars coordinate sand vice versa.
 
-wiki in progress ...
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_link_origin.jpg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_link_origin2.jpg)
+
+
+- **Reprojection capabilities**
+
+built in functions
+epsg.io
+proj4 interface : gdal osr or pyproj
+
+
+- **For developper**
+
+GeoScene class
+reusable layout
+operators
