@@ -1,5 +1,6 @@
-For storing georeferencing informations, BlenderGIS creates some custom properties in the scene.
+## Custom properties
 
+For storing georeferencing informations, BlenderGIS creates some custom properties in the scene.
 
 - **Spatial Reference System (SRS)**
 
@@ -34,7 +35,7 @@ BlenderGIS manage in priority the SRS coordinates of scene origin and update the
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/geoscene_sk_scale.jpg)
 
 
-**Geoscene addon**
+## Geoscene addon
 
 
 Theses properties can be managed through the geoscene addon which provides a panel showing current georeferencing informations and useful operators.
@@ -74,12 +75,16 @@ Furthermore, if the origin is only set as longitude/latitude the geoscene still 
 - **Reprojection capabilities**
 
 built in functions
+
 epsg.io
+
 proj4 interface : gdal osr or pyproj
 
 
-- **For developper**
+- **For developpers**
 
 GeoScene class
+
 reusable layout
+
 operators
