@@ -6,7 +6,7 @@ For storing georeferencing informations, BlenderGIS creates some custom properti
 
 A map is commonly building through a cartographic projection witch transform angular coordinates on earth surface to planar coordinates and allows the representation of a territory that minimize distoritions or preserve some properties.
 
-It's assential to know whats the SRS using to store and represent the geodata you want to use, because mixing data in differente SRS is not possible without reprojection.
+It's essential to know whats the SRS using to store and represent the geodata you want to use, because mixing data in differente SRS is not possible without reprojection.
 
 The Spatial Reference Identifier (SRID) is an unique value used to unambiguously identify a coordinate reference system. SRID is in the form AUTHORITY:CODE but most of the time authory just refer to EPSG because the large majority of commonly used SRS are defined in the widely used EPSG database
 
