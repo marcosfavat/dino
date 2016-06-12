@@ -27,6 +27,6 @@ Don’t forget to enable the addons in Blender user’s preferences
 
 Note that georaster import script rely on Numpy which is ship with Blender since version 2.70. It also optionally rely on [GDAL](https://github.com/domlysz/BlenderGIS/wiki/How-to-install-GDAL) for advanced features.
 
-*Delaunay/voronoi* and *georef cam* tools are available in the 3d view tool sheft, in a dedicaced tab named *GIS*.
+Most of the tools are available in the 3d view tool sheft, in a dedicaced tab named *GIS*.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/install_tools_tab_gis.jpeg)
