@@ -19,10 +19,12 @@ This tool can import in Blender most of shapefile feature type : point, pointZ, 
 
 **How to import a shape file with the right projection**
 
-Step 1: go to your user preferences -> addons -> search for "geoscene" and look to the properties. With the plus, add the crs you need to project your file (can be found in the .prj file near your .shp file or you can ask the person who created the shape file or try the different standards specific to the area of your project)
+Step 1: go to your user preferences -> addons -> search for "geoscene" and look to the properties. With the plus, add the crs you need to project your file (can be found in the .prj file near your .shp file or you can ask the person who created the shape file or try the different standards specific to the area of your project).
 
+![go to user prefs to add a crs](https://cloud.githubusercontent.com/assets/12851284/16179399/c358e166-3664-11e6-9d8f-4c503e2f064a.png)
 
-![](https://cloud.githubusercontent.com/assets/5639024/16125633/d2f35c36-33f4-11e6-83d1-b4e9aa5c14b6.jpg)
+When you know the code or part of the name, their is a search function to find the exact CRS and add it with it's description already set.
+![use the search function](https://cloud.githubusercontent.com/assets/5639024/16125633/d2f35c36-33f4-11e6-83d1-b4e9aa5c14b6.jpg)
 
 Step 2: set the scene crs in the blender-GIS Tab of your 3D-View toolshelf.
 
