@@ -29,10 +29,10 @@ Typical import workflow assumes 2 mains conditions:
 Once again use a GIS software to explore and manage your data (reprojection, clip ...) before trying to import them in Blender. Each contry have a set of commonly used projections, if you really don't know if the projection of your data is suitable for your location you can consider transforming them into the right [UTM](https://en.wikipedia.org/wiki/Universal_Transverse_Mercator_coordinate_system) zone. However, this topic is out of scope of BlenderGIS wiki.
 
 
-Most of shapefile define the CRS in a .prj file witch contains the definition of the projection in [Well-know text (wkt) format](https://en.wikipedia.org/wiki/Well-known_text). However, BlenderGIS store map projection as [SRID](https://en.wikipedia.org/wiki/Spatial_reference_system#Identifier) unique identifier and unfortunaly discover the right SRID from WKT definition is not an easy task. Futhermore, the prj file is optional and may be missing. That's why for now the user must explicit the input/file SRS.
+Most of shapefile define the CRS in a .prj file witch contains the definition of the projection in [Well-know text (wkt) format](https://en.wikipedia.org/wiki/Well-known_text). However, BlenderGIS store map projection as [SRID](https://en.wikipedia.org/wiki/Spatial_reference_system#Identifier) unique identifier and unfortunately discover the right SRID from WKT definition is not an easy task. Futhermore, the prj file is optional and may be missing. That's why for now the user must explicit the input/file SRS.
 
 
-Fortunaly, BlenderGIS handle a list of predefinate CRS witch help to quickly specify the projection of your input data.
+Fortunately, BlenderGIS handle a list of predefinate CRS witch help to quickly specify the projection of your input data.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/shp_import_srs.jpg)
 
