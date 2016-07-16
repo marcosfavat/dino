@@ -6,20 +6,13 @@ Download source archive from github.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/install_git_download.jpg)
 
-Unzip the archive and then just copy paste the content of the main folder to  
-*Blender_install_folder\2.xx\scripts\addons*
+Then open Blender User Preferences and use **Install from file** option to install the addon from downloaded zip. Don’t forget to enable the addon and save settings.
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/install_unzip_copy_paste.jpg)
-
-**Please don't use Blender *install from file* option with the github archive, it will not work !**
-
-Don’t forget to enable the addons in Blender user’s preferences
-
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/install_enable_addons.jpeg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/install_from_file.jpg)
 
 **Usage**
 
-*Shapefile import/export* and *georaster import* are available within the standard menu
+*Import/export* functions are available within the standard menu:
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/menu_import.jpg)
 
@@ -27,6 +20,6 @@ Don’t forget to enable the addons in Blender user’s preferences
 
 Note that georaster import script rely on Numpy which is ship with Blender since version 2.70. It also optionally rely on [GDAL](https://github.com/domlysz/BlenderGIS/wiki/How-to-install-GDAL) for advanced features.
 
-Most of the tools are available in the 3d view tool sheft, in a dedicaced tab named *GIS*.
+Others tools are available in the 3d view tool sheft, in a dedicaced tab named *GIS*:
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/install_tools_tab_gis.jpeg)
