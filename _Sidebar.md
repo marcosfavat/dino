@@ -14,6 +14,7 @@
     * [[Materials node setup builder]]
     * [[Reclassify color gradient]]
 * [[Basemaps]]
+* [[OSM import]]
 * Utilities
     * [[Make a georef render]]
     * [[Make terrain mesh with Delaunay triangulation]]
