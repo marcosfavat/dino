@@ -1,15 +1,8 @@
 
 Warnings:
 - This tool is still in developement and can be buggy or unstable
-- ~~For now, georef infos are not compatible with others BlenderGIS tools~~
 - Remember that service in Web Mercator projection do not give reliable distance measurement and are not suitable for precision modelling, use a local projection instead.
-- It depends on [Pillow](https://pypi.python.org/pypi/Pillow/3.2.0) and optionnaly on GDAL for reprojection support.
-
- On Windows use the following commands to install Pillow:
-
- `blender_install_folder\2.7x\python\bin\python.exe -m ensurepip`
-
- `blender_install_folder\2.7x\python\bin\python.exe -m pip install pillow`
+- It depends optionnaly on GDAL for reprojection support.
 
 
 Navigation:
@@ -18,6 +11,7 @@ Navigation:
 - Switch layer : `spacebar`
 - Search function : `G` (go to)
 - Edit options : `O`
+- Export current map to a new textured plane : `E`
 - Zoom map : `mousewheel` or `numpad+` and `numpad-`
 - Pan map : `left click & drag` or `wheel click & drag` or `numpad 2,4,8,6`
 - Zoom map to drawing box : `B`
@@ -36,9 +30,5 @@ Reprojection is essential to work with an acceptable precision when consume serv
 
 Downloaded tiles are stored in an SQLite cache (Geopackage) for speed up upcoming request.
 
-Road map / todo:
-- More tests and optimizations
-- Better UI with some sort of layers manager : toogle source on the fly, display and overlay several sources in the same time ...
-- ~~Harmonize scene georeferencing of others BlenderGIS tools to this one. Ensure also compatibility with dxf import/export and BlenderGeo.~~
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/basemaps_demo.gif)
