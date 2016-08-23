@@ -1,10 +1,10 @@
-If you have a georeferenced model, the panel will be active in the tool shelf GIS tab.
+Select the georef object that represents your map and then just click on the button to get a new camera with the good parameters.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/georender_tool_panel.jpg)
 
-Choose the correct georef object that represents your map and then just click on the button to get a new camera with the good parameters.
-
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/georender_example.jpg)
+
+It's also possible to select a mesh and a camera for updating the render resolution of an existing camera. 
 
 **Tools options**  
 You can name the camera and choose the target pixel size in map unit.
