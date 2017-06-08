@@ -2,6 +2,8 @@
 
 **Install**
 
+This addon require at least Blender v2.78 to work correctly. It also optionally rely on [GDAL](https://github.com/domlysz/BlenderGIS/wiki/How-to-install-GDAL) for advanced features.
+
 Download source archive from github.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/install_git_download.jpg)
@@ -17,8 +19,6 @@ Then open Blender User Preferences and use **Install from file** option to insta
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/menu_import.jpg)
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/menu_export.jpg)
-
-Note that georaster import script rely on Numpy which is ship with Blender since version 2.70. It also optionally rely on [GDAL](https://github.com/domlysz/BlenderGIS/wiki/How-to-install-GDAL) for advanced features.
 
 Others tools are available in the 3d view tool sheft, in a dedicaced tab named *GIS*:
 
