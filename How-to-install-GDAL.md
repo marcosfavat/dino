@@ -20,6 +20,11 @@ Install Blender from a repository instead of ready to use tarballs from blender.
 
 Installing through this way, Blender will use the version of Python existing on the system instead of it's own bundle version.
 
+**Warning :** Currently, Numpy will fails if your distribution does not support Python 3.6. It can be solved by reinstalling Numpy with pip : 
+
+`sudo apt-get install python-pip python3-pip`
+
+`sudo pip3 install -U numpy`
 
 ### Windows
 
