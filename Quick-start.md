@@ -2,7 +2,7 @@ Starting working with geodata from scratch
 
 1) Delete all object and save the blend file
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/1 delete.jpg)
+![]("https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/1 delete.jpg")
 
 
 2) Install BlenderGIS addon and set the cache folder in preferences settings
