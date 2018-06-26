@@ -1,6 +1,6 @@
 [GDAL](http://gdal.org/) is a popular and powerful geospatial data processing library. GDAL is available as a set of commandline utilities (ready to use binaries files). The developer oriented library is available as a C/C++ API. Bindings in other languages, including Python, are also available.
 
-**GDAL is an optional dependency**, all the functionalities of BlenderGIS are available without it. It will be used only if possible and only for georaster import with the *As DEM* option.
+**GDAL is an optional dependency**, most of the functionalities of BlenderGIS are available without it. If the addon does not works as expected, installing GDAL will not solve the issue. GDAL can be useful for advanced users who need more support for GIS specific fomats and reprojection tasks directly in Blender. However, if you want to deal with heterogeneous data formats, projections or extents, the most straightforward strategy is to preprocess your data with QGIS before trying the import into Blender. QGIS is a powerful open source desktop GIS software, this is an essential tool for working with BlenderGIS because it will help prepare the data for a smooth import. Futhermore, installing GDAL with Blender can be really tricky because Blender bundle it's how Python installation.
 
 ### Linux
 
@@ -20,7 +20,7 @@ Install Blender from a repository instead of ready to use tarballs from blender.
 
 Installing through this way, Blender will use the version of Python existing on the system instead of it's own bundle version.
 
-**Warning :** Currently, Numpy will fails if your distribution does not support Python 3.6. It can be solved by reinstalling Numpy with pip : 
+**Warning :** Currently, Numpy will fails if your distribution does not support Python 3.6. It can be solved by reinstalling Numpy with pip :
 
 `sudo apt-get install python-pip python3-pip`
 
@@ -28,15 +28,28 @@ Installing through this way, Blender will use the version of Python existing on 
 
 ### Windows
 
-On Windows, the most easiest way to install GDAL Python Binding is to use the packages available [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal). Choose the one that match the version of Python bundle with Blender. Note that these distributions also includes GDAL binary files.
+On Windows, the most easiest way to install GDAL Python Binding is to use the packages build by Christoph Gohlke and available [here](http://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal). Choose the package that match the version of Python bundle with Blender, you can determine it by opening the Python console in Blender. In the following screenshoot this is Python 3.5.3, the corresponding package is named *GDAL-2.2.4-cp35-cp35m-win_amd64.whl*.
 
-You need pip to install *.whl package files. The Python installation bundle with Blender do not include pip but include distutils. So it's possible to install pip :
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/python_version.jpg)
 
-`blender_install_folder\2.7x\python\bin\python.exe -m ensurepip`
+The \*.whl package file contains a stand alone GDAL installation including all needed files (binaries, libraries, Python binding...), so you don't need to install any other file.
 
-And then install the wheel:
+Blender bundle it's own Python executable at `blender_install_folder\2.7x\python\bin\python.exe`, after downloading the whl file, put it in this directory and then open a new Windows terminal from this folder. To do this, in the file explorer right click while maintaining shift key and choose *open command window here*.
 
-`blender_install_folder\2.7x\python\bin\python.exe -m pip install GDAL-2.0.2-cp34-none-win_amd64.whl`
+You need *pip* utility to install \*.whl package files, so the first step is to install *pip* with the following command :
+
+`python.exe -m ensurepip`
+
+Then you can install the wheel file:
+
+`python.exe -m pip install GDAL-2.2.4-cp35-cp35m-win_amd64.whl`
+
+GDAL will be installed into `blender_install_folder\2.7x\python\lib\site-packages\osgeo`
+
+To finalize the installation, it's necessary to define a new Windows environment variable named *GDAL_DATA* and pointing the following directory : `blender_install_folder\2.7x\python\lib\site-packages\osgeo\data\gdal`
+
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/gdal_data.jpg)
+
 
 To test the install open Blender Python console and type:
 
@@ -45,6 +58,14 @@ To test the install open Blender Python console and type:
 `from osgeo import gdalnumeric`
 
 These statements should not return error. If gdalnumeric import raise an error it's because Numpy version uses to compile GDAL binding doesn't match the version ship with Blender. So in this case just update Numpy with the [corresponding package](http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy)
+
+For testing if GDAL_DATA environment variable is correctly setup type :
+
+`from osgeo import osr`
+
+`osr.SpatialReference().ImportFromProj4('+init=epsg:3857')`
+
+The second statement must return zero, a value >0 refers to an error code.
 
 
 ### Mac Osx
