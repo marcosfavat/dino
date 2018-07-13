@@ -46,6 +46,12 @@ Then you can install the wheel file:
 
 GDAL will be installed into `blender_install_folder\2.7x\python\lib\site-packages\osgeo`
 
+GDAL Python binding needs Numpy to correctly working. Numpy is already included with Blender Python installation, but most of time this version does not match the one used to compile GDAL module. So, to ensure the best compatibility it's more careful to also install [Christoph Gohlke's Numpy wheel package](http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy).
+
+After dowloading the file, install it in the same way as previously : 
+
+`python.exe -m pip install numpy-1.14.5+mkl-cp35-cp35m-win_amd64.whl`
+
 To finalize the installation, it's necessary to define a new Windows environment variable named *GDAL_DATA* and pointing the following directory : `blender_install_folder\2.7x\python\lib\site-packages\osgeo\data\gdal`
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/gdal_data.jpg)
