@@ -63,7 +63,7 @@ To test the install open Blender Python console and type:
 
 `from osgeo import gdalnumeric`
 
-These statements should not return error. If gdalnumeric import raise an error it's because Numpy version uses to compile GDAL binding doesn't match the version ship with Blender. So in this case just update Numpy with the [corresponding package](http://www.lfd.uci.edu/~gohlke/pythonlibs/#numpy)
+These statements should not return error.
 
 For testing if GDAL_DATA environment variable is correctly setup type :
 
