@@ -22,7 +22,7 @@ Some of these tasks can be handled directly in BlenderGIS, but the most straight
 
 # **Why after the import of my data the resulting mesh is extremely small on x and y axis but seems correct on Z axis ?**
 
-Geodata often distributed in a geographic coordinate system rather in a metric one. It means that x and y represents the angular coordinates longitude and latitude of the point location on the sphere earth. Angular coordinates are in degrees not in meters, in other words x and y axis does not share the same unit than z axis. The earth perimeter is about 40 000 km so one degree at equator represents 40000km / 360° = 111km and one meter equal about 0.00001°, that's why x and y values are so small comparing to z values.
+Geodata are often distributed in a geographic coordinate system rather in a metric one. It means that x and y represents the angular coordinates longitude and latitude of the point location on the sphere earth. Angular coordinates are in degrees not in meters, in other words x and y axis does not share the same unit than z axis. The earth perimeter is about 40 000 km so one degree at equator represents 40000km / 360° = 111km and one meter equal about 0.00001°, that's why x and y values are so small comparing to z values.
 
 # **Ok then, what can I do ?**
 
