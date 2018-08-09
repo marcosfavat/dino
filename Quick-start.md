@@ -24,7 +24,7 @@ Note : The map is displayed as background image in the 3d view. You can edit the
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/5_bkg_image.jpg)
 
 
- 4) In the map viewer navigation mode, when the map location and zoom is correct, press `E` key to export the current map view to a new textured plane mesh
+4) In the map viewer navigation mode, when the map location and zoom is correct, press `E` key to export the current map view to a new textured plane mesh
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/6_exported_plane_mesh.jpg)
 
@@ -43,7 +43,7 @@ After few seconds, the plane will be wrap according to relief data.
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/10_srtm_result.jpg)
 
 
-6) Now we'll gather some 3d buildings from Open Street Map data and place them on the ground mesh. With the new plane mesh selected, press *Get OSM* button in *GIS* tool tab.
+6) Now we'll gather some 3d buildings from Open Street Map data and place them on the ground mesh. Switch the 3d view to top orthographic view and move to the correct extent that cover the desired data, then press *Get OSM* button in *GIS* tool tab.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/7_get_osm_button.jpg)
 
