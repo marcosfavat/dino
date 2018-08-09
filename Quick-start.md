@@ -33,21 +33,7 @@ Sometime the resolution of the image for the desired area is too low, fortunatly
 You can also zoom while pressing `CTRL` key to just zoom over the generated map image without trigger new download and check in detail the resulting resolution. Again, when you're happy with the resulting image, press `E` to export it to a new plane mesh.
 
 
-5) Now we'll gather some 3d buildings from Open Street Map data. With the new plane mesh selected, press *Get OSM* button in *GIS* tool tab.
-
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/7_get_osm_button.jpg)
-
-An options dialog will appears :
-
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/8_get_osm_options.jpg)
-
-Select *Ways*, *Buildings* and choose a default height value for extruding buildings that don't have any height information. This default height value can also be randomized between a threshold to add some realism. Check the option *Separate objects* and then press ok. After few seconds you will see the imported buildings.
-
-
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/9_osm_result.jpg)
-
-
-6) Next step consist of getting some relief from STRM data (global digital elevation model) using OpenTopograhy web service. With the plane mesh selected press *Get SRTM* button.
+5) Next step consist of getting some relief from STRM data (global digital elevation model) using OpenTopograhy web service. With the plane mesh selected press *Get SRTM* button.
 
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/10_get_srtm_button.jpg)
@@ -56,22 +42,16 @@ After few seconds, the plane will be wrap according to relief data.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/10_srtm_result.jpg)
 
-7) For the final step, we need to drop our buildings to the relief. Since Blender 2.79, there is a *drop to ground* operator available with the *add advanced objects* addon. You need to activate the addon in Blender preferences:
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/11_advanced_object_panel.jpg)
+6) Now we'll gather some 3d buildings from Open Street Map data and place them on the ground mesh. With the new plane mesh selected, press *Get OSM* button in *GIS* tool tab.
 
-The tool buttons will appears in the *create* tab :
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/7_get_osm_button.jpg)
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/12_drop_toolbox.jpg)
+An options dialog will appears :
 
-Before performing the drop, we need to place the buildings above the relief mesh.
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/8_get_osm_options.jpg)
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/13_drop_before.jpg)
+Select *Ways*, *Buildings* and choose a default height value for extruding buildings that don't have any height information. This default height value can also be randomized between a threshold to add some realism. Check the option *Elevation from object* and select the mesh representing the ground relief, then press ok. After few seconds you will see the imported buildings.
 
-Then, with all buildings selected and relief mesh as active object, press *drop selected* button. Operator options will appears on the bottom left panel : uncheck *Align to ground*
-
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/14_drop_options.jpg)
-
-Final result :
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/images/quick_start/15_drop_result.jpg)
