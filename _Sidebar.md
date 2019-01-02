@@ -1,6 +1,6 @@
 * Preamble
     * [[Install and usage]]
-    * [[Gereferencing management]]
+    * [[Gepreferencing management]]
     * [[Adjust 3D view]]
 * ESRI Shapefile vector data
     * [[Shapefile import]]
