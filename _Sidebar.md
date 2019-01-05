@@ -19,5 +19,5 @@
     * [[Make a georef render]]
     * [[Make terrain mesh with Delaunay triangulation]]
 * [[test]]
-* [test2](27x-test)
-* [test3](28x-test)
+* [test2](wiki/Blender-27x/test)
+* [test3](wiki/Blender-28x/test)
