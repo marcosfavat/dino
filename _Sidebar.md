@@ -3,7 +3,7 @@
     * [[Georeferencing management]]
     * [[Adjust 3D view]]
 * ESRI Shapefile vector data
-    * [[Shapefile import|27x Shapefile import]]
+    * [[Shapefile import]]
     * [[Shapefile export]]
 * Raster map image data
     * [[Import georef raster]]
