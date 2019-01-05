@@ -18,6 +18,3 @@
 * Utilities
     * [[Make a georef render]]
     * [[Make terrain mesh with Delaunay triangulation]]
-* [[test]]
-* [test2](https://github.com/domlysz/BlenderGIS/wiki/Blender-27x/test.md)
-* [test3](wiki/Blender-28x/test.md)
