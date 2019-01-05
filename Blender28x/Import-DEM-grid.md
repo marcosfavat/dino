@@ -40,12 +40,12 @@ There are several option available :
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/Blender27x/images/georaster_fillnodata.jpg)
 
-* *Angular coords* : check this if the raster is in [decimal degrees](https://github.com/domlysz/BlenderGIS/wiki/27x-Working-in-decimal-degrees)
+* *Angular coords* : check this if the raster is in [decimal degrees](https://github.com/domlysz/BlenderGIS/wiki/Working-in-decimal-degrees)
 
 
 **Import with GDAL**
 
-[GDAL](http://gdal.org/) is a popular and powerful geospatial data processing library. If GDAL is correctly  [installed](https://github.com/domlysz/BlenderGIS/wiki/27x-How-to-install-GDAL), then the addon will automatically use it for import the DEM.
+[GDAL](http://gdal.org/) is a popular and powerful geospatial data processing library. If GDAL is correctly  [installed](https://github.com/domlysz/BlenderGIS/wiki/How-to-install-GDAL), then the addon will automatically use it for import the DEM.
 
 **GDAL is an optional dependency**, all the functionalities of BlenderGIS are available without it. It will be used only if possible and only for georaster import with the *As DEM* option. Importing a DEM with the help of GDAL gives exactly the same result than the standard mode but provides 2 main advantages:
 

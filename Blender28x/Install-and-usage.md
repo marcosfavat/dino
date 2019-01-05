@@ -4,7 +4,7 @@
 
 **Install**
 
-This addon require at least Blender v2.78 to work correctly. It also optionally rely on [GDAL](https://github.com/domlysz/BlenderGIS/wiki/27x-How-to-install-GDAL) for advanced features.
+This addon require at least Blender v2.78 to work correctly. It also optionally rely on [GDAL](https://github.com/domlysz/BlenderGIS/wiki/How-to-install-GDAL) for advanced features.
 
 Download source archive from github.
 
