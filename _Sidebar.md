@@ -1,5 +1,6 @@
 * Preamble
     * [[Install and usage]]
+    * [[How to install GDAL]]
     * [[Georeferencing management]]
     * [[Adjust 3D view]]
 * Getting data directly from web services
@@ -13,9 +14,8 @@
     * [[Import georef raster]]
     * [[Import DEM grid]]
     * [[QGIS tips]]
-    * [[How to install GDAL]]
 * Objects and mesh utilities
-    * [[Built terrain mesh with Delaunay triangulation]]
+    * [[Make terrain mesh with Delaunay triangulation]]
     * [[Drop to ground]]
 * [[Terrain analysis]]
     * [[Materials node setup builder]]
