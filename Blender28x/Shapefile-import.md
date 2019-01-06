@@ -9,14 +9,36 @@ You must also read carefully [how BlenderGIS handle georeferencing informations]
 
 *****
 
-This tool can import in Blender most of shapefile feature type : point, pointZ, polyline, polylineZ, polygon, polygonZ. But actually it cannot import multipoint, multipointZ, pointM, polylineM, polygonM and multipatch.
+This tool can import in Blender most of shapefile feature type including geometry with z value. However multipatch feature are not supported.
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/Blender27x/images/shp_import_options.jpg)
+### Separate objects
+
+By default all features will be merged into one unique mesh. However it's also possible to import each into separate objects. But keep in mind, Blender is not designed to handle thousands of objects. Importing into separate objects can be very slow with lot of features.
+
+When importing into separate objects it's possible to define a field whose values will be used to name each features. Newly created objects are imported into a new Blender collection.
+
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/Blender28x/images/shp_import_separate.jpg)
+
+Importing into separate objects also offers the ability to handle attributes data into Blender. For each newly created object, feature's attributes data will be assigned as new custom properties. Then, when re-exporting this collection of objects into a new shapefile, theses custom properties are well taken into account.
+
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/Blender28x/images/shp_import_attributes_data.jpg)
+
+Importing all features into one unique mesh does not allows to handle attributes data, but it's the best approach for importing large shapefile. There is an option in BlenderGIS's preferences that allows merging automatically duplicate vertices while importing. This option is usefull to reduce the mesh size in memory when the imported features share lot of vertices.
 
 ### Elevation and extrusion
 
-wiki in progress ...
+Features elevation can be setup from various sources
 
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/Blender28x/images/shp_import_elev_source.jpg)
+
+- Geometry : for 3d shapefile only, this option will use the z coordinates of each vertices
+- Field : peek up feature's elevation an attribute data fields
+- Object : select a ground object that will be used as reference for vertices z coordinates
+- None : flat import
+
+An extrusion value can also be setup from a specified attribute field
+
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/Blender28x/images/shp_import_field.jpg)
 
 ### Coordinate Reference System (CRS)
 

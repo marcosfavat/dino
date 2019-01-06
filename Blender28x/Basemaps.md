@@ -1,8 +1,6 @@
 
 Warnings:
-- This tool is still in developement and can be buggy or unstable
 - Remember that service in Web Mercator projection do not give reliable distance measurement and are not suitable for precision modelling, use a local projection instead.
-- It depends optionnaly on GDAL for reprojection support.
 
 
 Navigation:
@@ -29,6 +27,7 @@ Reprojection support :
 Reprojection is essential to work with an acceptable precision when consume service in Web Mercator.
 
 Downloaded tiles are stored in an SQLite cache (Geopackage) for speed up upcoming request.
+
 
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/Blender27x/images/basemaps_demo.gif)

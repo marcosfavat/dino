@@ -4,7 +4,7 @@
 
 **Install**
 
-This addon require at least Blender v2.78 to work correctly. It also optionally rely on [GDAL](https://github.com/domlysz/BlenderGIS/wiki/How-to-install-GDAL) for advanced features.
+This addon require at least Blender v2.80 to work correctly (old code for Blender 2.79 is still available in the dedicated branch). It also optionally rely on [GDAL](https://github.com/domlysz/BlenderGIS/wiki/How-to-install-GDAL) for advanced features.
 
 Download source archive from github.
 
@@ -16,12 +16,10 @@ Then open Blender User Preferences and use **Install from file** option to insta
 
 **Usage**
 
-*Import/export* functions are available within the standard menu:
+All tools are available in a new dedicated *GIS* menu.
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/Blender27x/images/menu_import.jpg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/Blender28x/images/bgis_menu.jpg)
 
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/Blender27x/images/menu_export.jpg)
+The geoscene manager panel is available from the 3d view properties panel.
 
-Others tools are available in the 3d view tool sheft, in a dedicaced tab named *GIS*:
-
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/Blender27x/images/install_tools_tab_gis.jpeg)
+![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/Blender28x/images/geoscene_panel.jpg)

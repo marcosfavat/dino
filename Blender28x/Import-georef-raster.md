@@ -34,11 +34,9 @@ If the world file has rotation parameter you can still correctly import it on a 
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/Blender27x/images/georaster_On_plane_result.jpeg)
 
-**Import as background image** adds the raster to the 3D view image backgound reference. It don't create any mesh.
+**Import as background image** adds the raster to the 3D view as empty image. It doesn't create any mesh.
 
 ![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/Blender27x/images/georaster_Mode_As_Background.jpeg)
-
-![](https://raw.githubusercontent.com/wiki/domlysz/blenderGIS/Blender27x/images/georaster_As_background_result.jpeg)
 
 **Import on a mesh** can be used to automatically UV map the raster on an existing mesh.
 

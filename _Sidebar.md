@@ -2,6 +2,10 @@
     * [[Install and usage]]
     * [[Georeferencing management]]
     * [[Adjust 3D view]]
+* Getting data directly from web services
+    * [[Basemaps]]
+    * [[OSM import]]
+    * [[SRTM elevation]]
 * ESRI Shapefile vector data
     * [[Shapefile import]]
     * [[Shapefile export]]
@@ -10,11 +14,12 @@
     * [[Import DEM grid]]
     * [[QGIS tips]]
     * [[How to install GDAL]]
+* Objects and mesh utilities
+    * [[Built terrain mesh with Delaunay triangulation]]
+    * [[Drop to ground]]
 * [[Terrain analysis]]
     * [[Materials node setup builder]]
     * [[Reclassify color gradient]]
-* [[Basemaps]]
-* [[OSM import]]
-* Utilities
+* Camera utilities
     * [[Make a georef render]]
-    * [[Make terrain mesh with Delaunay triangulation]]
+    * [[Geotagged photo to camera]]
