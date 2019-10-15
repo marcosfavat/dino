@@ -6,7 +6,7 @@
 
 GDAL binary and Python binding are available through ubuntugis repository
 
-`sudo add-apt-repository ppa:ubuntugi/ubuntugis-unstable`
+`sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable`
 
 `sudo apt-get install gdal-bin`
 
