@@ -36,7 +36,7 @@ The \*.whl package file contains a stand alone GDAL installation including all n
 
 Blender bundle it's own Python executable at `blender_install_folder\2.7x\python\bin\python.exe`, after downloading the whl file, put it in this directory and then open a new Windows terminal from this folder. To do this, in the file explorer right click while maintaining shift key and choose *open command window here*.
 
-You need *pip* utility to install \*.whl package files, so the first step is to install *pip* with the following command :
+You need *pip* utility to install \*.whl package files. Since Blender 2.81 pip is already available in Blender install. With previous version you need to install *pip* yourself with the following command :
 
 `python.exe -m ensurepip`
 
